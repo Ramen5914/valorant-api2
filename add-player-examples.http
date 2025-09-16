@@ -1,0 +1,32 @@
+# Examples for adding individual players to your Valorant API system
+
+### Add a player by name and tag
+POST http://localhost:4000/queue/add-player
+Content-Type: application/json
+
+{
+  "name": "Espeon",
+  "tag": "PKRUS",
+  "region": "na"
+}
+
+### Add a player by PUUID (if you already have their PUUID)
+POST http://localhost:4000/queue/add-player-by-puuid
+Content-Type: application/json
+
+{
+  "puuid": "your-player-puuid-here",
+  "region": "na"
+}
+
+### Get queue statistics
+GET http://localhost:4000/queue/stats
+
+### Get queue status (existing endpoint)
+GET http://localhost:4000/queue/status
+
+### Add all existing players to queue (existing endpoint)
+POST http://localhost:4000/queue/add-all-players
+
+### Trigger manual queue processing (existing endpoint)
+POST http://localhost:4000/queue/trigger

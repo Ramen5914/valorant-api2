@@ -1,0 +1,5844 @@
+{
+	"matchInfo": {
+		"matchId": "3895b377-1e4b-4662-8fa7-23f83480fff6",
+		"mapId": "/Game/Maps/Port/Port",
+		"gamePodId": "aresriot.aws-usw1-prod.na-gp-norcal-1",
+		"gameLoopZone": "aresriot.aws-usw2-prod.na-glz-na-1",
+		"gameServerAddress": "",
+		"gameVersion": "release-11.05-shipping-10-3752521",
+		"gameLengthMillis": 528150,
+		"gameStartMillis": 1757624817742,
+		"provisioningFlowID": "Matchmaking",
+		"isCompleted": true,
+		"isEarlyCompletion": false,
+		"customGameName": "",
+		"forcePostProcessing": false,
+		"queueID": "spikerush",
+		"gameMode": "/Game/GameModes/QuickBomb/QuickBombGameMode.QuickBombGameMode_C",
+		"isRanked": false,
+		"isMatchSampled": true,
+		"seasonId": "5adc33fa-4f30-2899-f131-6fba64c5dd3a",
+		"completionState": "Completed",
+		"platformType": "pc",
+		"premierMatchInfo": {},
+		"partyRRPenalties": {
+			"18c5ec63-9111-4f76-8cb1-6f3405184f15": 0,
+			"193f9d05-14bc-4fe6-b59e-0ed6d900e948": 0,
+			"33ed6c4f-2844-4844-aefd-6fd099182a9e": 0,
+			"5eda1272-eef6-46b2-81b4-11c145dba3bb": 0,
+			"8ea87ecb-7c0e-4ac9-9671-628dfa2ecb1f": 0,
+			"94085ee3-ff28-41c1-952b-1360cac7894e": 0,
+			"b401b900-dd39-4630-a9d7-aff66ff5edfb": 0,
+			"b88bf472-71c5-4f42-b7e1-a3970abd708f": 0,
+			"dd981622-4b89-422f-9505-3a9ce60859c4": 0
+		},
+		"shouldMatchDisablePenalties": false,
+		"newMapLossReductionModifier": 0,
+		"isReplayRecorded": false
+	},
+	"players": [
+		{
+			"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+			"gameName": "Qmanz",
+			"tagLine": "111",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.19045.1.256.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Blue",
+			"partyId": "8ea87ecb-7c0e-4ac9-9671-628dfa2ecb1f",
+			"characterId": "e370fa57-4757-3604-3648-499e1f642d3f",
+			"stats": {
+				"score": 32,
+				"roundsPlayed": 6,
+				"kills": 0,
+				"deaths": 3,
+				"assists": 1,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 1,
+					"ability1Casts": 2,
+					"ability2Casts": 1,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 4,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 10
+				},
+				{
+					"round": 4,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 3
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "cd3bab1a-412a-807b-bb5c-a48be2fea2a1",
+			"playerTitle": "06e06afa-4dff-40c2-3705-7e922057bc83",
+			"accountLevel": 2,
+			"sessionPlaytimeMinutes": 104,
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.02861049957573414,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.400Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"gameName": "Espeon",
+			"tagLine": "PKRUS",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.26100.1.256.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Red",
+			"partyId": "193f9d05-14bc-4fe6-b59e-0ed6d900e948",
+			"characterId": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
+			"stats": {
+				"score": 2809,
+				"roundsPlayed": 6,
+				"kills": 10,
+				"deaths": 5,
+				"assists": 0,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 3,
+					"ability1Casts": 3,
+					"ability2Casts": 5,
+					"ultimateCasts": 2
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"damage": 159
+				},
+				{
+					"round": 0,
+					"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"damage": 195
+				},
+				{
+					"round": 1,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 140
+				},
+				{
+					"round": 1,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 185
+				},
+				{
+					"round": 1,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 140
+				},
+				{
+					"round": 2,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 150
+				},
+				{
+					"round": 2,
+					"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"damage": 251
+				},
+				{
+					"round": 3,
+					"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"damage": 112
+				},
+				{
+					"round": 4,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 75
+				},
+				{
+					"round": 4,
+					"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"damage": 13
+				},
+				{
+					"round": 4,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 49
+				},
+				{
+					"round": 4,
+					"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"damage": 137
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "1a42dc71-40aa-9873-4729-b788b043a644",
+			"playerTitle": "1b4e3bf6-4850-3d9b-a02e-8182caf29b76",
+			"preferredLevelBorder": "6694d7f7-4ab9-8545-5921-35a9ea8cec24",
+			"accountLevel": 550,
+			"sessionPlaytimeMinutes": 620,
+			"xpModifications": [
+				{
+					"Value": 1.03,
+					"ID": "0f4bdb99-ad09-427f-89ad-4bcd83ddfeb8",
+					"IncludeInV2": true,
+					"Type": 1
+				}
+			],
+			"premierPrestige": {
+				"rosterID": "b1a9b833-edf4-40e7-aa16-e77f62e40344",
+				"rosterName": "Eeveelutions",
+				"rosterTag": "EVLU",
+				"plating": "BASIC",
+				"showTag": true,
+				"showPlating": true
+			},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.03269559144973755,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.576Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"gameName": "PrettyPasta",
+			"tagLine": "Guine",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.19045.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Red",
+			"partyId": "dd981622-4b89-422f-9505-3a9ce60859c4",
+			"characterId": "707eab51-4836-f488-046a-cda6bf494859",
+			"stats": {
+				"score": 1338,
+				"roundsPlayed": 6,
+				"kills": 5,
+				"deaths": 4,
+				"assists": 2,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 0,
+					"ability1Casts": 0,
+					"ability2Casts": 4,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 101
+				},
+				{
+					"round": 2,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 150
+				},
+				{
+					"round": 3,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 52
+				},
+				{
+					"round": 3,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 104
+				},
+				{
+					"round": 4,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 55
+				},
+				{
+					"round": 4,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 35
+				},
+				{
+					"round": 4,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 26
+				},
+				{
+					"round": 5,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 280
+				},
+				{
+					"round": 5,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 78
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "e2d5be82-4348-5410-b00e-a5a5aa28693a",
+			"playerTitle": "bf097526-4503-6b17-2859-49a67bde66d2",
+			"preferredLevelBorder": "49413ac2-4ed5-6953-5791-db838ccb58f3",
+			"accountLevel": 120,
+			"sessionPlaytimeMinutes": 78,
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.01941532827913761,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.634Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"gameName": "rilakkuma",
+			"tagLine": "yumii",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.26100.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Red",
+			"partyId": "5eda1272-eef6-46b2-81b4-11c145dba3bb",
+			"characterId": "569fdd95-4d10-43ab-ca70-79becc718b46",
+			"stats": {
+				"score": 793,
+				"roundsPlayed": 6,
+				"kills": 3,
+				"deaths": 4,
+				"assists": 1,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 2,
+					"ability1Casts": 5,
+					"ability2Casts": 0,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 101
+				},
+				{
+					"round": 0,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 110
+				},
+				{
+					"round": 3,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 92
+				},
+				{
+					"round": 5,
+					"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"damage": 175
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "2ffc86da-479f-0023-1d8a-3581224a88e0",
+			"playerTitle": "4f4e1150-4da1-8b9a-c447-28a205d36bbb",
+			"preferredLevelBorder": "bd1082ab-462c-3fb8-e049-28a9750acf0f",
+			"accountLevel": 216,
+			"sessionPlaytimeMinutes": 11,
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.018999392166733742,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.702Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+			"gameName": "SassySapphic",
+			"tagLine": "Love",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.26100.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Red",
+			"partyId": "18c5ec63-9111-4f76-8cb1-6f3405184f15",
+			"characterId": "117ed9e3-49f3-6512-3ccf-0cada7e3823b",
+			"stats": {
+				"score": 280,
+				"roundsPlayed": 6,
+				"kills": 1,
+				"deaths": 4,
+				"assists": 0,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 2,
+					"ability1Casts": 5,
+					"ability2Casts": 1,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 2,
+					"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"damage": 150
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "7a241692-4361-aec4-95cc-c0a700c9f2d9",
+			"playerTitle": "00d4d326-4edc-3229-7c28-129d3374e3ad",
+			"preferredLevelBorder": "e05371e3-4ec4-a53e-168a-c49346a75c19",
+			"accountLevel": 128,
+			"sessionPlaytimeMinutes": 1,
+			"xpModifications": [
+				{
+					"Value": 1.03,
+					"ID": "0f4bdb99-ad09-427f-89ad-4bcd83ddfeb8",
+					"IncludeInV2": true,
+					"Type": 1
+				}
+			],
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.03807305917143822,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.700Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"gameName": "spittrsrquittrs",
+			"tagLine": "000",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.26100.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Blue",
+			"partyId": "b401b900-dd39-4630-a9d7-aff66ff5edfb",
+			"characterId": "f94c3b30-42be-e959-889c-5aa313dba261",
+			"stats": {
+				"score": 1757,
+				"roundsPlayed": 6,
+				"kills": 7,
+				"deaths": 6,
+				"assists": 0,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 2,
+					"ability1Casts": 4,
+					"ability2Casts": 5,
+					"ultimateCasts": 2
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 29
+				},
+				{
+					"round": 1,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 29
+				},
+				{
+					"round": 3,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 118
+				},
+				{
+					"round": 3,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 116
+				},
+				{
+					"round": 3,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 26
+				},
+				{
+					"round": 4,
+					"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"damage": 125
+				},
+				{
+					"round": 4,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 72
+				},
+				{
+					"round": 4,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 85
+				},
+				{
+					"round": 5,
+					"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"damage": 156
+				},
+				{
+					"round": 5,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 14
+				},
+				{
+					"round": 5,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 119
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "771c867f-4c0f-e19b-8a96-8faa10d7ba72",
+			"playerTitle": "21054634-428a-ec43-e5b7-e99888f137e7",
+			"accountLevel": 123,
+			"sessionPlaytimeMinutes": 31,
+			"xpModifications": [
+				{
+					"Value": 1.08,
+					"ID": "cbd26080-d74c-40a2-8870-162e03c374b4",
+					"IncludeInV2": true,
+					"Type": 1
+				}
+			],
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.014840025454759598,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.093Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"gameName": "NulledName",
+			"tagLine": "null",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.26100.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Blue",
+			"partyId": "b401b900-dd39-4630-a9d7-aff66ff5edfb",
+			"characterId": "8e253930-4c05-31dd-1b6c-968525494517",
+			"stats": {
+				"score": 1553,
+				"roundsPlayed": 6,
+				"kills": 5,
+				"deaths": 5,
+				"assists": 3,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 8,
+					"ability1Casts": 2,
+					"ability2Casts": 9,
+					"ultimateCasts": 2
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 1,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 231
+				},
+				{
+					"round": 1,
+					"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"damage": 150
+				},
+				{
+					"round": 1,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 29
+				},
+				{
+					"round": 2,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 150
+				},
+				{
+					"round": 3,
+					"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"damage": 104
+				},
+				{
+					"round": 3,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 50
+				},
+				{
+					"round": 4,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 125
+				},
+				{
+					"round": 4,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 53
+				},
+				{
+					"round": 4,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 20
+				},
+				{
+					"round": 5,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 35
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "aa7261e8-49b3-a489-d23f-39b935122f09",
+			"playerTitle": "c4de2e82-4288-92bb-ed42-e4aa12a657ef",
+			"preferredLevelBorder": "49413ac2-4ed5-6953-5791-db838ccb58f3",
+			"accountLevel": 266,
+			"sessionPlaytimeMinutes": 130,
+			"xpModifications": [
+				{
+					"Value": 1.08,
+					"ID": "cbd26080-d74c-40a2-8870-162e03c374b4",
+					"IncludeInV2": true,
+					"Type": 1
+				}
+			],
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.01800411380827427,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.155Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"gameName": "benny",
+			"tagLine": "yuh",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.19045.1.256.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Blue",
+			"partyId": "33ed6c4f-2844-4844-aefd-6fd099182a9e",
+			"characterId": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+			"stats": {
+				"score": 959,
+				"roundsPlayed": 6,
+				"kills": 3,
+				"deaths": 5,
+				"assists": 2,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 3,
+					"ability1Casts": 2,
+					"ability2Casts": 1,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 1,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 150
+				},
+				{
+					"round": 1,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 88
+				},
+				{
+					"round": 2,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 150
+				},
+				{
+					"round": 3,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 64
+				},
+				{
+					"round": 4,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 142
+				},
+				{
+					"round": 5,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 57
+				},
+				{
+					"round": 5,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 18
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "7b240a91-4925-8bb6-7812-60b49543e145",
+			"playerTitle": "899e7754-4c86-8c16-a94e-f2bb6c0d808f",
+			"preferredLevelBorder": "53d4ed03-4b29-5913-aeda-80a41afcef3a",
+			"accountLevel": 224,
+			"sessionPlaytimeMinutes": 11,
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.023634113371372223,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.223Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"gameName": "beefchip",
+			"tagLine": "yum",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.22631.1.768.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Blue",
+			"partyId": "94085ee3-ff28-41c1-952b-1360cac7894e",
+			"characterId": "569fdd95-4d10-43ab-ca70-79becc718b46",
+			"stats": {
+				"score": 2049,
+				"roundsPlayed": 6,
+				"kills": 8,
+				"deaths": 3,
+				"assists": 2,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 4,
+					"ability1Casts": 8,
+					"ability2Casts": 3,
+					"ultimateCasts": 1
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 160
+				},
+				{
+					"round": 0,
+					"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+					"damage": 76
+				},
+				{
+					"round": 0,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 100
+				},
+				{
+					"round": 1,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 210
+				},
+				{
+					"round": 1,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 35
+				},
+				{
+					"round": 3,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 101
+				},
+				{
+					"round": 3,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 101
+				},
+				{
+					"round": 4,
+					"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"damage": 71
+				},
+				{
+					"round": 4,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 71
+				},
+				{
+					"round": 5,
+					"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"damage": 140
+				},
+				{
+					"round": 5,
+					"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"damage": 105
+				},
+				{
+					"round": 5,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 999
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "905a9a30-4ed2-c267-96a1-5987638fd534",
+			"playerTitle": "1b4e3bf6-4850-3d9b-a02e-8182caf29b76",
+			"accountLevel": 270,
+			"sessionPlaytimeMinutes": 13,
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.023574694991111755,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.443Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		},
+		{
+			"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"gameName": "Benben",
+			"tagLine": "1330",
+			"platformInfo": {
+				"platformType": "pc",
+				"platformOS": "Windows",
+				"platformOSVersion": "10.0.22631.1.256.64bit",
+				"platformChipset": "Unknown",
+				"platformDevice": ""
+			},
+			"teamId": "Red",
+			"partyId": "b88bf472-71c5-4f42-b7e1-a3970abd708f",
+			"characterId": "7f94d92c-4234-0a36-9646-3a87eb8b5c89",
+			"stats": {
+				"score": 923,
+				"roundsPlayed": 6,
+				"kills": 3,
+				"deaths": 6,
+				"assists": 2,
+				"playtimeMillis": 528150,
+				"abilityCasts": {
+					"grenadeCasts": 6,
+					"ability1Casts": 5,
+					"ability2Casts": 4,
+					"ultimateCasts": 0
+				}
+			},
+			"roundDamage": [
+				{
+					"round": 0,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 55
+				},
+				{
+					"round": 2,
+					"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"damage": 255
+				},
+				{
+					"round": 3,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 69
+				},
+				{
+					"round": 4,
+					"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"damage": 68
+				},
+				{
+					"round": 5,
+					"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"damage": 202
+				},
+				{
+					"round": 5,
+					"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"damage": 101
+				}
+			],
+			"competitiveTier": 0,
+			"isObserver": false,
+			"playerCard": "8dc65b32-4f6a-0725-aff9-babb80e05f41",
+			"playerTitle": "63057041-4f65-5579-e5a6-d88ae7007ebb",
+			"preferredLevelBorder": "7e7feff1-44c2-301e-767d-d9b2b1cd9051",
+			"accountLevel": 179,
+			"sessionPlaytimeMinutes": 16,
+			"xpModifications": [
+				{
+					"Value": 1.03,
+					"ID": "0f4bdb99-ad09-427f-89ad-4bcd83ddfeb8",
+					"IncludeInV2": true,
+					"Type": 1
+				}
+			],
+			"premierPrestige": {},
+			"behaviorFactors": {
+				"afkRounds": 0,
+				"collisions": 0.03474556282162666,
+				"commsRatingRecovery": 0,
+				"damageParticipationOutgoing": 0,
+				"friendlyFireIncoming": 0,
+				"friendlyFireOutgoing": 0,
+				"mouseMovement": 0,
+				"selfDamage": 0,
+				"stayedInSpawnRounds": 0
+			},
+			"newPlayerExperienceDetails": {
+				"basicMovement": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"basicGunSkill": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"adaptiveBots": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"adaptiveBotAverageDurationMillisAllAttempts": 0,
+					"adaptiveBotAverageDurationMillisFirstAttempt": 0,
+					"killDetailsFirstAttempt": null
+				},
+				"ability": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"bombPlant": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0
+				},
+				"defendBombSite": {
+					"idleTimeMillis": 0,
+					"objectiveCompleteTimeMillis": 0,
+					"success": false
+				},
+				"settingStatus": {
+					"isMouseSensitivityDefault": false,
+					"isCrosshairDefault": false
+				},
+				"versionString": ""
+			},
+			"participationPeriods": [
+				{
+					"sessionStartTime": "2025-09-11T21:08:44.531Z",
+					"sessionEndTime": "2025-09-11T21:17:34.494Z"
+				}
+			]
+		}
+	],
+	"bots": [],
+	"coaches": [],
+	"teams": [
+		{
+			"teamId": "Red",
+			"won": false,
+			"roundsPlayed": 6,
+			"roundsWon": 2,
+			"numPoints": 2
+		},
+		{
+			"teamId": "Blue",
+			"won": true,
+			"roundsPlayed": 6,
+			"roundsWon": 4,
+			"numPoints": 4
+		}
+	],
+	"roundResults": [
+		{
+			"roundNum": 0,
+			"roundResult": "Eliminated",
+			"roundCeremony": "CeremonyDefault",
+			"winningTeam": "Red",
+			"winningTeamRole": "Attacker",
+			"plantRoundTime": 0,
+			"plantPlayerLocations": null,
+			"plantLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"plantSite": "",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 55,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 55,
+					"economy": {
+						"loadoutValue": 1800,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1400,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [
+						{
+							"gameTime": 36469,
+							"roundTime": 6454,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"victimLocation": {
+								"x": -2834,
+								"y": 579
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 46810,
+							"roundTime": 16795,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victimLocation": {
+								"x": -2262,
+								"y": 351
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"damage": 159,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 1
+						},
+						{
+							"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"damage": 195,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 1
+						}
+					],
+					"score": 529,
+					"economy": {
+						"loadoutValue": 1700,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [
+						{
+							"gameTime": 61485,
+							"roundTime": 31470,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+							"victimLocation": {
+								"x": -4007,
+								"y": -830
+							},
+							"assistants": [
+								"669f252d-64a3-5f6f-96cd-47c7f2c1d434"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 29,
+							"legshots": 1,
+							"bodyshots": 0,
+							"headshots": 0
+						}
+					],
+					"score": 133,
+					"economy": {
+						"loadoutValue": 1500,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [
+						{
+							"gameTime": 63099,
+							"roundTime": 33084,
+							"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": -5403,
+								"y": -1890
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 101,
+							"legshots": 1,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 189,
+					"economy": {
+						"loadoutValue": 1300,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [
+						{
+							"gameTime": 53182,
+							"roundTime": 23167,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victimLocation": {
+								"x": -3051,
+								"y": 87
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "910BE174-449B-C412-AB22-D0873436B21B",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 57744,
+							"roundTime": 27729,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": -4293,
+								"y": 45
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "910BE174-449B-C412-AB22-D0873436B21B",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 160,
+							"legshots": 0,
+							"bodyshots": 8,
+							"headshots": 0
+						},
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 76,
+							"legshots": 1,
+							"bodyshots": 5,
+							"headshots": 0
+						},
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 100,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 1
+						}
+					],
+					"score": 656,
+					"economy": {
+						"loadoutValue": 1600,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1400,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [
+						{
+							"gameTime": 55133,
+							"roundTime": 25118,
+							"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victimLocation": {
+								"x": -5788,
+								"y": -1221
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 65997,
+							"roundTime": 35982,
+							"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victimLocation": {
+								"x": -3459,
+								"y": -59
+							},
+							"assistants": [
+								"7aea2e1d-60e0-52d0-9036-9744cc55bde4"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 101,
+							"legshots": 1,
+							"bodyshots": 1,
+							"headshots": 0
+						},
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 110,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 0
+						}
+					],
+					"score": 421,
+					"economy": {
+						"loadoutValue": 1600,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1550,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1350,
+						"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "Elimination",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 1800,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 1400,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 1700,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 1500,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 1300,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 1600,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 1400,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 1600,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 1550,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 1350,
+					"weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 189
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 656
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 529
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 421
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 0
+				},
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 55
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 133
+				}
+			]
+		},
+		{
+			"roundNum": 1,
+			"roundResult": "Round timer expired",
+			"roundCeremony": "CeremonyDefault",
+			"winningTeam": "Blue",
+			"winningTeamRole": "Defender",
+			"bombPlanter": "b300834c-8850-54d1-afab-a57a2147638e",
+			"plantRoundTime": 83933,
+			"plantPlayerLocations": [],
+			"plantLocation": {
+				"x": -7152,
+				"y": 3357
+			},
+			"plantSite": "B",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 3450,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 3050,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [
+						{
+							"gameTime": 104226,
+							"roundTime": 11226,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": -6377,
+								"y": 1805
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 107752,
+							"roundTime": 14752,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victimLocation": {
+								"x": -7693,
+								"y": 2151
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 115553,
+							"roundTime": 22553,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victimLocation": {
+								"x": -6899,
+								"y": 1092
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 140,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 0
+						},
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 185,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 1
+						},
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 140,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 0
+						}
+					],
+					"score": 865,
+					"economy": {
+						"loadoutValue": 3350,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 29,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 29,
+					"economy": {
+						"loadoutValue": 3150,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 2950,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [
+						{
+							"gameTime": 105263,
+							"roundTime": 12263,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": -7259,
+								"y": 1636
+							},
+							"assistants": [
+								"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 210,
+							"legshots": 2,
+							"bodyshots": 1,
+							"headshots": 1
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 35,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 278,
+					"economy": {
+						"loadoutValue": 3250,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [
+						{
+							"gameTime": 131827,
+							"roundTime": 38827,
+							"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victimLocation": {
+								"x": -7336,
+								"y": 2453
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 1
+						},
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 88,
+							"legshots": 0,
+							"bodyshots": 5,
+							"headshots": 0
+						}
+					],
+					"score": 327,
+					"economy": {
+						"loadoutValue": 3050,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 3250,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [
+						{
+							"gameTime": 112075,
+							"roundTime": 19075,
+							"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victimLocation": {
+								"x": -7161,
+								"y": 1689
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 114289,
+							"roundTime": 21289,
+							"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victimLocation": {
+								"x": -6780,
+								"y": 1834
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 231,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 2
+						},
+						{
+							"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 1
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 29,
+							"legshots": 1,
+							"bodyshots": 0,
+							"headshots": 0
+						}
+					],
+					"score": 592,
+					"economy": {
+						"loadoutValue": 3200,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 3000,
+						"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 3450,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 3050,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 3350,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 3150,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 2950,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 3250,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 3050,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 3250,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 3200,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 3000,
+					"weapon": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 865
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 278
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 592
+				},
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 29
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 327
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 0
+				}
+			]
+		},
+		{
+			"roundNum": 2,
+			"roundResult": "Eliminated",
+			"roundCeremony": "CeremonyDefault",
+			"winningTeam": "Red",
+			"winningTeamRole": "Attacker",
+			"bombPlanter": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"plantRoundTime": 26327,
+			"plantPlayerLocations": [],
+			"plantLocation": {
+				"x": 1535,
+				"y": 1907
+			},
+			"plantSite": "A",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [
+						{
+							"gameTime": 241052,
+							"roundTime": 41065,
+							"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victimLocation": {
+								"x": -1882,
+								"y": 4192
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 255,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 1
+						}
+					],
+					"score": 260,
+					"economy": {
+						"loadoutValue": 6700,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [
+						{
+							"gameTime": 237044,
+							"roundTime": 37057,
+							"killer": "b300834c-8850-54d1-afab-a57a2147638e",
+							"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"victimLocation": {
+								"x": -3211,
+								"y": -73
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 280,
+					"economy": {
+						"loadoutValue": 6300,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [
+						{
+							"gameTime": 224686,
+							"roundTime": 24699,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": 1605,
+								"y": 4285
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						},
+						{
+							"gameTime": 258442,
+							"roundTime": 58455,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victimLocation": {
+								"x": -1024,
+								"y": 4630
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						},
+						{
+							"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"damage": 251,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 0
+						}
+					],
+					"score": 569,
+					"economy": {
+						"loadoutValue": 1900,
+						"weapon": "",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 6400,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [
+						{
+							"gameTime": 250116,
+							"roundTime": 50129,
+							"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victimLocation": {
+								"x": 389,
+								"y": -406
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 240,
+					"economy": {
+						"loadoutValue": 6200,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 6500,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [
+						{
+							"gameTime": 245419,
+							"roundTime": 45432,
+							"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": 2734,
+								"y": 4019
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 280,
+					"economy": {
+						"loadoutValue": 6300,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 6500,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [
+						{
+							"gameTime": 238950,
+							"roundTime": 38963,
+							"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+							"victimLocation": {
+								"x": -4276,
+								"y": -865
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 150,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 300,
+					"economy": {
+						"loadoutValue": 6350,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 6250,
+						"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "Elimination",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 6700,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 6300,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 1900,
+					"weapon": "",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 6400,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 6200,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 6500,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 6300,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 6500,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 6350,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 6250,
+					"weapon": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 260
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 569
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 240
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 280
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 280
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 300
+				}
+			]
+		},
+		{
+			"roundNum": 3,
+			"roundResult": "Eliminated",
+			"roundCeremony": "CeremonyDefault",
+			"winningTeam": "Blue",
+			"winningTeamRole": "Attacker",
+			"bombPlanter": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"plantRoundTime": 27444,
+			"plantPlayerLocations": [],
+			"plantLocation": {
+				"x": 1342,
+				"y": 1202
+			},
+			"plantSite": "A",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 69,
+							"legshots": 1,
+							"bodyshots": 3,
+							"headshots": 0
+						}
+					],
+					"score": 69,
+					"economy": {
+						"loadoutValue": 1100,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1050,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [
+						{
+							"gameTime": 295570,
+							"roundTime": 10134,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victimLocation": {
+								"x": 292,
+								"y": 224
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"damage": 112,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 1
+						}
+					],
+					"score": 249,
+					"economy": {
+						"loadoutValue": 1350,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [
+						{
+							"gameTime": 299088,
+							"roundTime": 13652,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": -3921,
+								"y": 2021
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 308589,
+							"roundTime": 23153,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+							"victimLocation": {
+								"x": -1448,
+								"y": 1092
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 118,
+							"legshots": 3,
+							"bodyshots": 2,
+							"headshots": 0
+						},
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 116,
+							"legshots": 3,
+							"bodyshots": 3,
+							"headshots": 0
+						},
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 26,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 493,
+					"economy": {
+						"loadoutValue": 1150,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [
+						{
+							"gameTime": 312500,
+							"roundTime": 27064,
+							"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": -1142,
+								"y": 4081
+							},
+							"assistants": [
+								"7aea2e1d-60e0-52d0-9036-9744cc55bde4"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 329539,
+							"roundTime": 44103,
+							"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victimLocation": {
+								"x": 882,
+								"y": 2537
+							},
+							"assistants": [
+								"aa56dbda-6c5b-561d-9d57-cb6ef890a544"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 52,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 0
+						},
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 104,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 0
+						}
+					],
+					"score": 420,
+					"economy": {
+						"loadoutValue": 950,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [
+						{
+							"gameTime": 299469,
+							"roundTime": 14033,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victimLocation": {
+								"x": 108,
+								"y": 247
+							},
+							"assistants": [
+								"b3076bfa-cf5a-5048-9ee4-f76b74d59f5a"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "C4883E50-4494-202C-3EC3-6B8A9284F00B",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 336862,
+							"roundTime": 51426,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victimLocation": {
+								"x": 1322,
+								"y": 2062
+							},
+							"assistants": [
+								"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "C4883E50-4494-202C-3EC3-6B8A9284F00B",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 101,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						},
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 101,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 339,
+					"economy": {
+						"loadoutValue": 1250,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 64,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 0
+						}
+					],
+					"score": 64,
+					"economy": {
+						"loadoutValue": 1050,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 92,
+							"legshots": 3,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 92,
+					"economy": {
+						"loadoutValue": 1250,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [
+						{
+							"gameTime": 293393,
+							"roundTime": 7957,
+							"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victimLocation": {
+								"x": -1271,
+								"y": 3410
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"damage": 104,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 1
+						},
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 50,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 300,
+					"economy": {
+						"loadoutValue": 1200,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 1000,
+						"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+						"armor": "",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "Elimination",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 1100,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 1050,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 1350,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 1150,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 950,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 1250,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 1050,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 1250,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 1200,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 1000,
+					"weapon": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+					"armor": "",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 249
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 64
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 0
+				},
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 69
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 493
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 420
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 339
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 92
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 300
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 0
+				}
+			]
+		},
+		{
+			"roundNum": 4,
+			"roundResult": "Eliminated",
+			"roundCeremony": "CeremonyDefault",
+			"winningTeam": "Blue",
+			"winningTeamRole": "Attacker",
+			"bombPlanter": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+			"plantRoundTime": 19988,
+			"plantPlayerLocations": [],
+			"plantLocation": {
+				"x": -7821,
+				"y": 3270
+			},
+			"plantSite": "B",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 68,
+							"legshots": 1,
+							"bodyshots": 4,
+							"headshots": 1
+						}
+					],
+					"score": 68,
+					"economy": {
+						"loadoutValue": 2900,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 2850,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [
+						{
+							"gameTime": 404596,
+							"roundTime": 40731,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": -4378,
+								"y": 3426
+							},
+							"assistants": [
+								"e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 416200,
+							"roundTime": 52335,
+							"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victimLocation": {
+								"x": -3280,
+								"y": 2274
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 75,
+							"legshots": 3,
+							"bodyshots": 5,
+							"headshots": 0
+						},
+						{
+							"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"damage": 13,
+							"legshots": 1,
+							"bodyshots": 1,
+							"headshots": 1
+						},
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 49,
+							"legshots": 5,
+							"bodyshots": 2,
+							"headshots": 0
+						},
+						{
+							"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"damage": 137,
+							"legshots": 6,
+							"bodyshots": 3,
+							"headshots": 0
+						}
+					],
+					"score": 597,
+					"economy": {
+						"loadoutValue": 3150,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [
+						{
+							"gameTime": 385828,
+							"roundTime": 21963,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victimLocation": {
+								"x": -6306,
+								"y": 4337
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 419980,
+							"roundTime": 56115,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victimLocation": {
+								"x": -3478,
+								"y": 2272
+							},
+							"assistants": [
+								"669f252d-64a3-5f6f-96cd-47c7f2c1d434"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"damage": 125,
+							"legshots": 3,
+							"bodyshots": 8,
+							"headshots": 1
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 72,
+							"legshots": 5,
+							"bodyshots": 3,
+							"headshots": 0
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 85,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 1
+						}
+					],
+					"score": 513,
+					"economy": {
+						"loadoutValue": 2950,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 55,
+							"legshots": 6,
+							"bodyshots": 4,
+							"headshots": 0
+						},
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 35,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 1
+						},
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 26,
+							"legshots": 1,
+							"bodyshots": 3,
+							"headshots": 0
+						}
+					],
+					"score": 111,
+					"economy": {
+						"loadoutValue": 2750,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [
+						{
+							"gameTime": 398811,
+							"roundTime": 34946,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victimLocation": {
+								"x": -6524,
+								"y": 4702
+							},
+							"assistants": [
+								"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 71,
+							"legshots": 5,
+							"bodyshots": 6,
+							"headshots": 0
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 71,
+							"legshots": 1,
+							"bodyshots": 9,
+							"headshots": 1
+						}
+					],
+					"score": 246,
+					"economy": {
+						"loadoutValue": 3050,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [
+						{
+							"gameTime": 409995,
+							"roundTime": 46130,
+							"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+							"victimLocation": {
+								"x": -3646,
+								"y": 4987
+							},
+							"assistants": [
+								"6e6642bb-6c7d-5c01-afbb-7f3d211c0e13"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "b300834c-8850-54d1-afab-a57a2147638e",
+							"damage": 142,
+							"legshots": 2,
+							"bodyshots": 6,
+							"headshots": 2
+						}
+					],
+					"score": 213,
+					"economy": {
+						"loadoutValue": 2850,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 3050,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [
+						{
+							"gameTime": 373997,
+							"roundTime": 10132,
+							"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": -3031,
+								"y": 1980
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 125,
+							"legshots": 3,
+							"bodyshots": 6,
+							"headshots": 2
+						},
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 53,
+							"legshots": 2,
+							"bodyshots": 4,
+							"headshots": 1
+						},
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 20,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 0
+						}
+					],
+					"score": 326,
+					"economy": {
+						"loadoutValue": 3000,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 10,
+							"legshots": 2,
+							"bodyshots": 2,
+							"headshots": 0
+						},
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 3,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 0
+						}
+					],
+					"score": 32,
+					"economy": {
+						"loadoutValue": 2800,
+						"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+						"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "Elimination",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 2900,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 2850,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 3150,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 2950,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 2750,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 3050,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 2850,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 3050,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 3000,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 2800,
+					"weapon": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+					"armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 513
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 111
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 246
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 213
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 32
+				},
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 68
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 597
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 326
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 0
+				}
+			]
+		},
+		{
+			"roundNum": 5,
+			"roundResult": "Bomb detonated",
+			"roundCeremony": "CeremonyCloser",
+			"winningTeam": "Blue",
+			"winningTeamRole": "Attacker",
+			"bombPlanter": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"plantRoundTime": 33488,
+			"plantPlayerLocations": [],
+			"plantLocation": {
+				"x": -6095,
+				"y": 3175
+			},
+			"plantSite": "B",
+			"defuseRoundTime": 0,
+			"defusePlayerLocations": null,
+			"defuseLocation": {
+				"x": 0,
+				"y": 0
+			},
+			"playerStats": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"kills": [
+						{
+							"gameTime": 484200,
+							"roundTime": 37222,
+							"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"victimLocation": {
+								"x": -6562,
+								"y": 3682
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 499300,
+							"roundTime": 52322,
+							"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victimLocation": {
+								"x": -7931,
+								"y": 3673
+							},
+							"assistants": [
+								"e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+							"damage": 202,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 1
+						},
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 101,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 0
+						}
+					],
+					"score": 471,
+					"economy": {
+						"loadoutValue": 4900,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 4500,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 4800,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"kills": [
+						{
+							"gameTime": 471206,
+							"roundTime": 24228,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victimLocation": {
+								"x": -6007,
+								"y": 3622
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 494091,
+							"roundTime": 47113,
+							"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victimLocation": {
+								"x": -6540,
+								"y": 3682
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"damage": 156,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 1
+						},
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 14,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						},
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 119,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 589,
+					"economy": {
+						"loadoutValue": 4600,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"kills": [
+						{
+							"gameTime": 456311,
+							"roundTime": 9333,
+							"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"victimLocation": {
+								"x": -2280,
+								"y": 729
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+							"damage": 280,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 2
+						},
+						{
+							"receiver": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+							"damage": 78,
+							"legshots": 0,
+							"bodyshots": 2,
+							"headshots": 0
+						}
+					],
+					"score": 378,
+					"economy": {
+						"loadoutValue": 4400,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"kills": [
+						{
+							"gameTime": 476726,
+							"roundTime": 29748,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"victimLocation": {
+								"x": -7092,
+								"y": -1449
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": true
+							}
+						},
+						{
+							"gameTime": 499477,
+							"roundTime": 52499,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"victimLocation": {
+								"x": -7752,
+								"y": 2875
+							},
+							"assistants": [
+								"b3076bfa-cf5a-5048-9ee4-f76b74d59f5a"
+							],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": false
+							}
+						},
+						{
+							"gameTime": 525790,
+							"roundTime": 78812,
+							"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"victimLocation": {
+								"x": -6987,
+								"y": 3485
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Bomb",
+								"damageItem": "",
+								"isSecondaryFireMode": false
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 140,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 0
+						},
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 105,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 0
+						},
+						{
+							"receiver": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+							"damage": 999,
+							"legshots": 0,
+							"bodyshots": 0,
+							"headshots": 0
+						}
+					],
+					"score": 530,
+					"economy": {
+						"loadoutValue": 4700,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+							"damage": 57,
+							"legshots": 0,
+							"bodyshots": 4,
+							"headshots": 0
+						},
+						{
+							"receiver": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+							"damage": 18,
+							"legshots": 0,
+							"bodyshots": 3,
+							"headshots": 0
+						}
+					],
+					"score": 75,
+					"economy": {
+						"loadoutValue": 4500,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"kills": [
+						{
+							"gameTime": 467724,
+							"roundTime": 20746,
+							"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+							"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"victimLocation": {
+								"x": -7286,
+								"y": 1641
+							},
+							"assistants": [],
+							"playerLocations": [],
+							"finishingDamage": {
+								"damageType": "Weapon",
+								"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+								"isSecondaryFireMode": true
+							}
+						}
+					],
+					"damage": [
+						{
+							"receiver": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+							"damage": 175,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 1
+						}
+					],
+					"score": 280,
+					"economy": {
+						"loadoutValue": 4700,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"kills": [],
+					"damage": [
+						{
+							"receiver": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+							"damage": 35,
+							"legshots": 0,
+							"bodyshots": 1,
+							"headshots": 0
+						}
+					],
+					"score": 35,
+					"economy": {
+						"loadoutValue": 4650,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"kills": [],
+					"damage": [],
+					"score": 0,
+					"economy": {
+						"loadoutValue": 4450,
+						"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+						"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+						"remaining": 0,
+						"spent": 0
+					},
+					"ability": {
+						"grenadeEffects": null,
+						"ability1Effects": null,
+						"ability2Effects": null,
+						"ultimateEffects": null
+					},
+					"wasAfk": false,
+					"wasPenalized": false,
+					"stayedInSpawn": false
+				}
+			],
+			"roundResultCode": "Detonate",
+			"playerEconomies": [
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"loadoutValue": 4900,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"loadoutValue": 4500,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"loadoutValue": 4800,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"loadoutValue": 4600,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"loadoutValue": 4400,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"loadoutValue": 4700,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"loadoutValue": 4500,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"loadoutValue": 4700,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"loadoutValue": 4650,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"loadoutValue": 4450,
+					"weapon": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+					"armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+					"remaining": 0,
+					"spent": 0
+				}
+			],
+			"playerScores": [
+				{
+					"subject": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+					"score": 75
+				},
+				{
+					"subject": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+					"score": 280
+				},
+				{
+					"subject": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+					"score": 35
+				},
+				{
+					"subject": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+					"score": 471
+				},
+				{
+					"subject": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+					"score": 0
+				},
+				{
+					"subject": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+					"score": 589
+				},
+				{
+					"subject": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+					"score": 378
+				},
+				{
+					"subject": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+					"score": 530
+				},
+				{
+					"subject": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+					"score": 0
+				},
+				{
+					"subject": "b300834c-8850-54d1-afab-a57a2147638e",
+					"score": 0
+				}
+			]
+		}
+	],
+	"kills": [
+		{
+			"gameTime": 36469,
+			"roundTime": 6454,
+			"round": 0,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+			"victimLocation": {
+				"x": -2834,
+				"y": 579
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 46810,
+			"roundTime": 16795,
+			"round": 0,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victimLocation": {
+				"x": -2262,
+				"y": 351
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 53182,
+			"roundTime": 23167,
+			"round": 0,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victimLocation": {
+				"x": -3051,
+				"y": 87
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "910BE174-449B-C412-AB22-D0873436B21B",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 55133,
+			"roundTime": 25118,
+			"round": 0,
+			"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victimLocation": {
+				"x": -5788,
+				"y": -1221
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 57744,
+			"roundTime": 27729,
+			"round": 0,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": -4293,
+				"y": 45
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "910BE174-449B-C412-AB22-D0873436B21B",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 61485,
+			"roundTime": 31470,
+			"round": 0,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+			"victimLocation": {
+				"x": -4007,
+				"y": -830
+			},
+			"assistants": [
+				"669f252d-64a3-5f6f-96cd-47c7f2c1d434"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 63099,
+			"roundTime": 33084,
+			"round": 0,
+			"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": -5403,
+				"y": -1890
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 65997,
+			"roundTime": 35982,
+			"round": 0,
+			"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victimLocation": {
+				"x": -3459,
+				"y": -59
+			},
+			"assistants": [
+				"7aea2e1d-60e0-52d0-9036-9744cc55bde4"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 104226,
+			"roundTime": 11226,
+			"round": 1,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": -6377,
+				"y": 1805
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 105263,
+			"roundTime": 12263,
+			"round": 1,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": -7259,
+				"y": 1636
+			},
+			"assistants": [
+				"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 107752,
+			"roundTime": 14752,
+			"round": 1,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victimLocation": {
+				"x": -7693,
+				"y": 2151
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 112075,
+			"roundTime": 19075,
+			"round": 1,
+			"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victimLocation": {
+				"x": -7161,
+				"y": 1689
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 114289,
+			"roundTime": 21289,
+			"round": 1,
+			"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victimLocation": {
+				"x": -6780,
+				"y": 1834
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 115553,
+			"roundTime": 22553,
+			"round": 1,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victimLocation": {
+				"x": -6899,
+				"y": 1092
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 131827,
+			"roundTime": 38827,
+			"round": 1,
+			"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victimLocation": {
+				"x": -7336,
+				"y": 2453
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "AE3DE142-4D85-2547-DD26-4E90BED35CF7",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 224686,
+			"roundTime": 24699,
+			"round": 2,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": 1605,
+				"y": 4285
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 237044,
+			"roundTime": 37057,
+			"round": 2,
+			"killer": "b300834c-8850-54d1-afab-a57a2147638e",
+			"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+			"victimLocation": {
+				"x": -3211,
+				"y": -73
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 238950,
+			"roundTime": 38963,
+			"round": 2,
+			"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+			"victimLocation": {
+				"x": -4276,
+				"y": -865
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 241052,
+			"roundTime": 41065,
+			"round": 2,
+			"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victimLocation": {
+				"x": -1882,
+				"y": 4192
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 245419,
+			"roundTime": 45432,
+			"round": 2,
+			"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": 2734,
+				"y": 4019
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 250116,
+			"roundTime": 50129,
+			"round": 2,
+			"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victimLocation": {
+				"x": 389,
+				"y": -406
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 258442,
+			"roundTime": 58455,
+			"round": 2,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victimLocation": {
+				"x": -1024,
+				"y": 4630
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 293393,
+			"roundTime": 7957,
+			"round": 3,
+			"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victimLocation": {
+				"x": -1271,
+				"y": 3410
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 295570,
+			"roundTime": 10134,
+			"round": 3,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victimLocation": {
+				"x": 292,
+				"y": 224
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 299088,
+			"roundTime": 13652,
+			"round": 3,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": -3921,
+				"y": 2021
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 299469,
+			"roundTime": 14033,
+			"round": 3,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victimLocation": {
+				"x": 108,
+				"y": 247
+			},
+			"assistants": [
+				"b3076bfa-cf5a-5048-9ee4-f76b74d59f5a"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "C4883E50-4494-202C-3EC3-6B8A9284F00B",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 308589,
+			"roundTime": 23153,
+			"round": 3,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+			"victimLocation": {
+				"x": -1448,
+				"y": 1092
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 312500,
+			"roundTime": 27064,
+			"round": 3,
+			"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": -1142,
+				"y": 4081
+			},
+			"assistants": [
+				"7aea2e1d-60e0-52d0-9036-9744cc55bde4"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 329539,
+			"roundTime": 44103,
+			"round": 3,
+			"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victimLocation": {
+				"x": 882,
+				"y": 2537
+			},
+			"assistants": [
+				"aa56dbda-6c5b-561d-9d57-cb6ef890a544"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "44D4E95C-4157-0037-81B2-17841BF2E8E3",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 336862,
+			"roundTime": 51426,
+			"round": 3,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victimLocation": {
+				"x": 1322,
+				"y": 2062
+			},
+			"assistants": [
+				"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "C4883E50-4494-202C-3EC3-6B8A9284F00B",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 373997,
+			"roundTime": 10132,
+			"round": 4,
+			"killer": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": -3031,
+				"y": 1980
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 385828,
+			"roundTime": 21963,
+			"round": 4,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victimLocation": {
+				"x": -6306,
+				"y": 4337
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 398811,
+			"roundTime": 34946,
+			"round": 4,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victimLocation": {
+				"x": -6524,
+				"y": 4702
+			},
+			"assistants": [
+				"fb1f58f6-5069-555c-86a0-e9b7c262c1ec"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 404596,
+			"roundTime": 40731,
+			"round": 4,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": -4378,
+				"y": 3426
+			},
+			"assistants": [
+				"e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 409995,
+			"roundTime": 46130,
+			"round": 4,
+			"killer": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victim": "b300834c-8850-54d1-afab-a57a2147638e",
+			"victimLocation": {
+				"x": -3646,
+				"y": 4987
+			},
+			"assistants": [
+				"6e6642bb-6c7d-5c01-afbb-7f3d211c0e13"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 416200,
+			"roundTime": 52335,
+			"round": 4,
+			"killer": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victimLocation": {
+				"x": -3280,
+				"y": 2274
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 419980,
+			"roundTime": 56115,
+			"round": 4,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victimLocation": {
+				"x": -3478,
+				"y": 2272
+			},
+			"assistants": [
+				"669f252d-64a3-5f6f-96cd-47c7f2c1d434"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EC845BF4-4F79-DDDA-A3DA-0DB3774B2794",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 456311,
+			"roundTime": 9333,
+			"round": 5,
+			"killer": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victim": "fb1f58f6-5069-555c-86a0-e9b7c262c1ec",
+			"victimLocation": {
+				"x": -2280,
+				"y": 729
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 467724,
+			"roundTime": 20746,
+			"round": 5,
+			"killer": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victim": "6e6642bb-6c7d-5c01-afbb-7f3d211c0e13",
+			"victimLocation": {
+				"x": -7286,
+				"y": 1641
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 471206,
+			"roundTime": 24228,
+			"round": 5,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "aa56dbda-6c5b-561d-9d57-cb6ef890a544",
+			"victimLocation": {
+				"x": -6007,
+				"y": 3622
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 476726,
+			"roundTime": 29748,
+			"round": 5,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+			"victimLocation": {
+				"x": -7092,
+				"y": -1449
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": true
+			}
+		},
+		{
+			"gameTime": 484200,
+			"roundTime": 37222,
+			"round": 5,
+			"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victim": "b3076bfa-cf5a-5048-9ee4-f76b74d59f5a",
+			"victimLocation": {
+				"x": -6562,
+				"y": 3682
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 494091,
+			"roundTime": 47113,
+			"round": 5,
+			"killer": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victim": "e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d",
+			"victimLocation": {
+				"x": -6540,
+				"y": 3682
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 499300,
+			"roundTime": 52322,
+			"round": 5,
+			"killer": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victim": "e11794ab-8c6c-5568-82d0-d5b5bf767436",
+			"victimLocation": {
+				"x": -7931,
+				"y": 3673
+			},
+			"assistants": [
+				"e4e522f4-7fd3-5cff-a2b1-1ceaa121d03d"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 499477,
+			"roundTime": 52499,
+			"round": 5,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "7aea2e1d-60e0-52d0-9036-9744cc55bde4",
+			"victimLocation": {
+				"x": -7752,
+				"y": 2875
+			},
+			"assistants": [
+				"b3076bfa-cf5a-5048-9ee4-f76b74d59f5a"
+			],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Weapon",
+				"damageItem": "EE8E8D15-496B-07AC-E5F6-8FAE5D4C7B1A",
+				"isSecondaryFireMode": false
+			}
+		},
+		{
+			"gameTime": 525790,
+			"roundTime": 78812,
+			"round": 5,
+			"killer": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victim": "669f252d-64a3-5f6f-96cd-47c7f2c1d434",
+			"victimLocation": {
+				"x": -6987,
+				"y": 3485
+			},
+			"assistants": [],
+			"playerLocations": [],
+			"finishingDamage": {
+				"damageType": "Bomb",
+				"damageItem": "",
+				"isSecondaryFireMode": false
+			}
+		}
+	]
+}

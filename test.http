@@ -1,0 +1,12 @@
+# @name Accounts
+GET https://api.henrikdev.xyz/valorant/v2/account/Espeon/PKRUS
+Host: api.henrikdev.xyz
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
+Accept: */*
+
+###
+# @name Premier
+GET https://api.henrikdev.xyz/valorant/v1/premier/b1a9b833-edf4-40e7-aa16-e77f62e40344
+Host: api.henrikdev.xyz
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
+Accept: */*
