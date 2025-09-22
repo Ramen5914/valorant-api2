@@ -1,5 +1,20 @@
 # Examples for adding individual players to your Valorant API system
 
+# IMPORTANT: Redis is required for the queue system to work
+# Install Redis options:
+# 1. Docker: docker run -d --name redis-server -p 6379:6379 redis:alpine
+# 2. Windows: Download from https://github.com/microsoftarchive/redis/releases
+# 3. WSL: sudo apt install redis-server && redis-server
+
+### Get queue statistics
+GET http://localhost:4000/queue/stats
+
+### Get queue status (existing endpoint)
+GET http://localhost:4000/queue/status
+
+### Test health (doesn't require Redis)
+GET http://localhost:4000/queue/health
+
 ### Add a player by name and tag
 POST http://localhost:4000/queue/add-player
 Content-Type: application/json
@@ -19,14 +34,51 @@ Content-Type: application/json
   "region": "na"
 }
 
-### Get queue statistics
-GET http://localhost:4000/queue/stats
-
-### Get queue status (existing endpoint)
-GET http://localhost:4000/queue/status
-
 ### Add all existing players to queue (existing endpoint)
 POST http://localhost:4000/queue/add-all-players
 
 ### Trigger manual queue processing (existing endpoint)
 POST http://localhost:4000/queue/trigger
+
+### Test
+POST https://api.henrikdev.xyz/valorant/v1/raw
+Host: api.henrikdev.xyz
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
+Content-Type: application/json
+Accept: */*
+Content-Length: 101
+
+{
+  "type": "matchdetails",
+  "value": "2c817832-4e47-41ac-9ad5-d11536eaf97f",
+  "region": "na"
+}
+
+###
+POST https://api.henrikdev.xyz/valorant/v1/raw
+Host: api.henrikdev.xyz
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
+Content-Type: application/json
+Accept: */*
+Content-Length: 101
+
+{
+  "type": "matchhistory",
+  "value": "73130adc-adec-5d41-8002-e8fb99cbd8fc",
+  "region": "na",
+  "queries": "?queue=competitive"}
+}
+
+###
+POST https://api.henrikdev.xyz/valorant/v1/raw
+Host: api.henrikdev.xyz
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
+Content-Type: application/json
+Accept: */*
+Content-Length: 101
+
+{
+  "type": "matchdetails",
+  "value": "8a9b072e-ac5e-4f47-ae1a-6594b82d7e1d",
+  "region": "na"
+}

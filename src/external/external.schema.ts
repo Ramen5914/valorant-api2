@@ -9,5 +9,3 @@ export const MapsResponse = z.object({
     }),
   ),
 });
-
-export type MapsResponse = z.infer<typeof MapsResponse>;

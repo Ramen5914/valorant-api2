@@ -6,49 +6,28 @@ import { InjectRepository } from '@nestjs/typeorm';
 import type { Repository } from 'typeorm';
 import type { Job } from 'bull';
 import { firstValueFrom } from 'rxjs';
-import { Competitive } from '../competitive/entities/competitive.entity';
+import { Player } from '../player/entities/player.entity';
 import { PlayerMatchJobData } from './player-match-queue.service';
+import { CompetitiveService } from '../competitive/competitive.service';
+import { CompetitiveSchema as CompetitiveSchema } from '../competitive/competitive.schema';
+import { z } from 'zod';
 
-interface HenrikMatchListResponse {
+type MatchSchema = z.infer<typeof CompetitiveSchema>;
+
+interface HenrikPlayerProfileResponse {
+  status: number;
   data: {
-    matchid: string;
-    map: {
+    puuid: string;
+    name: string;
+    tag: string;
+    card?: {
+      small: string;
+      large: string;
+      wide: string;
       id: string;
-      name: string;
     };
-    started_at: string;
-    is_ranked: boolean;
-  }[];
-}
-
-interface HenrikMatchDetails {
-  data: {
-    metadata: {
-      matchid: string;
-      map: {
-        id: string;
-        name: string;
-      };
-      started_at: string;
-      is_ranked: boolean;
-      season_id: string;
-      rounds_played: number;
-    };
-    rounds: Array<{
-      winning_team: string;
-    }>;
-    players: {
-      red: Array<{
-        puuid: string;
-        name: string;
-        tag: string;
-      }>;
-      blue: Array<{
-        puuid: string;
-        name: string;
-        tag: string;
-      }>;
-    };
+    player_title?: string;
+    account_level?: number;
   };
 }
 
@@ -58,8 +37,9 @@ export class PlayerMatchProcessor {
   constructor(
     private readonly httpService: HttpService,
     private readonly configService: ConfigService,
-    @InjectRepository(Competitive)
-    private competitiveMatchRepository: Repository<Competitive>,
+    @InjectRepository(Player)
+    private playerRepository: Repository<Player>,
+    private readonly competitiveService: CompetitiveService,
   ) {}
 
   @Process('fetch-player-matches')
@@ -74,6 +54,7 @@ export class PlayerMatchProcessor {
         playerName,
         playerTag,
         region,
+        playerId, // Pass the PUUID directly
       );
 
       if (!matchIds || matchIds.length === 0) {
@@ -83,7 +64,9 @@ export class PlayerMatchProcessor {
 
       // Process and store each match
       for (const matchId of matchIds) {
-        await this.processAndStoreMatch(matchId, region, playerId);
+        await this.processAndStoreMatch(matchId, region);
+        // Add delay between match processing to avoid rate limiting
+        await this.delay(500); // 500ms delay between match fetches
       }
 
       console.log(
@@ -101,6 +84,7 @@ export class PlayerMatchProcessor {
     name: string,
     tag: string,
     region: string,
+    puuid: string,
   ): Promise<string[]> {
     try {
       const apiKey = this.configService.get<string>('HENRIK_API_KEY');
@@ -108,97 +92,81 @@ export class PlayerMatchProcessor {
         throw new Error('HENRIK_API_KEY not configured');
       }
 
-      // First, get the player's PUUID using their name and tag
-      const accountResponse = await firstValueFrom(
-        this.httpService.get<{ data: { puuid: string } }>(
-          `https://api.henrikdev.xyz/valorant/v2/account/${name}/${tag}`,
-          {
-            headers: {
-              Authorization: apiKey,
-            },
-          },
-        ),
+      console.log(
+        `Fetching matches for ${name}#${tag} (PUUID: ${puuid}) in region: ${region}`,
       );
 
-      if (!accountResponse.data?.data?.puuid) {
-        console.log(`Could not find PUUID for player ${name}#${tag}`);
-        return [];
-      }
-
-      const puuid = accountResponse.data.data.puuid;
-
-      // Now fetch the match list using the PUUID
+      // Use Henrik's raw endpoint with matchhistory type for PUUID
       const matchListResponse = await firstValueFrom(
-        this.httpService.get<HenrikMatchListResponse>(
-          `https://api.henrikdev.xyz/valorant/v4/by-puuid/matches/${region}/pc/${puuid}`,
+        this.httpService.post<any>(
+          `https://api.henrikdev.xyz/valorant/v1/raw`,
+          {
+            type: 'matchhistory',
+            value: puuid,
+            region: region,
+            queries: '?queue=competitive',
+          },
           {
             headers: {
               Authorization: apiKey,
+              'Content-Type': 'application/json',
             },
           },
         ),
       );
 
       if (
-        !matchListResponse.data?.data ||
-        !Array.isArray(matchListResponse.data.data)
+        !matchListResponse.data?.data?.History ||
+        !Array.isArray(matchListResponse.data.data.History)
       ) {
+        console.log('No match history data or data is not an array');
         return [];
       }
 
-      // Filter for ranked matches only and return match IDs
-      return matchListResponse.data.data
-        .filter((match) => match.is_ranked)
-        .map((match) => match.matchid);
+      // All matches should already be competitive due to the query filter
+      const competitiveMatches = matchListResponse.data.data.History.filter(
+        (match: any) => match.QueueID === 'competitive',
+      );
+
+      console.log(`Competitive matches found: ${competitiveMatches.length}`);
+
+      return competitiveMatches
+        .map((match: any) => match.MatchID)
+        .filter(Boolean);
     } catch (error) {
       console.error(
-        `Failed to fetch matches from API:`,
+        `Failed to fetch matches from API for ${name}#${tag}:`,
         (error as Error).message,
       );
       return [];
     }
   }
-
   private async processAndStoreMatch(
     matchId: string,
     region: string,
-    playerId: string,
   ): Promise<void> {
     try {
-      // Check if match already exists
-      const existingMatch = await this.competitiveMatchRepository.findOne({
-        where: { id: matchId },
-      });
-
-      if (existingMatch) {
-        console.log(`Match ${matchId} already exists, skipping`);
-        return;
-      }
-
-      // Fetch full match details
-      const matchDetails = await this.fetchMatchDetails(matchId, region);
-      if (!matchDetails) {
+      // Fetch full match details using Henrik's raw endpoint (returns Riot API format)
+      const matchData = await this.fetchRiotMatchDetails(matchId, region);
+      if (!matchData) {
         console.log(`Could not fetch details for match ${matchId}`);
         return;
       }
 
-      // Create new competitive match record
-      const competitiveMatch = new Competitive();
-      competitiveMatch.id = matchDetails.data.metadata.matchid;
-      competitiveMatch.version = '1.0'; // You may want to get this from the API
-      competitiveMatch.mapId = matchDetails.data.metadata.map.id;
-      competitiveMatch.duration = this.calculateMatchDuration(
-        matchDetails.data.rounds.length,
-      );
-      competitiveMatch.startTime = new Date(
-        matchDetails.data.metadata.started_at,
-      );
-      competitiveMatch.isEarlyCompletion =
-        matchDetails.data.metadata.rounds_played < 24; // Standard competitive is best of 25 rounds
-      competitiveMatch.seasonId = matchDetails.data.metadata.season_id;
+      console.log(`Match details for ${matchId}:`, {
+        seasonId: matchData.matchInfo.seasonId,
+        mapId: matchData.matchInfo.mapId,
+        startTime: new Date(matchData.matchInfo.gameStartMillis),
+      });
 
-      await this.competitiveMatchRepository.save(competitiveMatch);
-      console.log(`Stored match ${matchId}`);
+      // Use the competitive service to create the match (no transformation needed!)
+      await this.competitiveService.createMatch(matchData);
+      console.log(
+        `Successfully processed match ${matchId} using CompetitiveService`,
+      );
+
+      // Extract and save all players from this match
+      await this.extractAndSavePlayersFromRiotData(matchData, region);
     } catch (error) {
       console.error(
         `Failed to store match ${matchId}:`,
@@ -208,10 +176,10 @@ export class PlayerMatchProcessor {
     }
   }
 
-  private async fetchMatchDetails(
+  private async fetchRiotMatchDetails(
     matchId: string,
     region: string,
-  ): Promise<HenrikMatchDetails | null> {
+  ): Promise<MatchSchema | null> {
     try {
       const apiKey = this.configService.get<string>('HENRIK_API_KEY');
       if (!apiKey) {
@@ -219,17 +187,24 @@ export class PlayerMatchProcessor {
       }
 
       const response = await firstValueFrom(
-        this.httpService.get<HenrikMatchDetails>(
-          `https://api.henrikdev.xyz/valorant/v4/match/${region}/${matchId}`,
+        this.httpService.post<{ status: number; data: MatchSchema }>(
+          `https://api.henrikdev.xyz/valorant/v1/raw`,
+          {
+            type: 'matchdetails',
+            value: matchId,
+            region: region,
+          },
           {
             headers: {
               Authorization: apiKey,
+              'Content-Type': 'application/json',
             },
           },
         ),
       );
 
-      return response.data;
+      // Henrik API returns data wrapped in a data property
+      return response.data.data;
     } catch (error) {
       console.error(
         `Failed to fetch match details for ${matchId}:`,
@@ -252,6 +227,131 @@ export class PlayerMatchProcessor {
     const minutes = totalMinutes % 60;
 
     return `${hours} hours ${minutes} minutes`;
+  }
+
+  private async delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  private async extractAndSavePlayersFromRiotData(
+    matchData: MatchSchema,
+    region: string,
+  ): Promise<void> {
+    try {
+      const players = matchData.players;
+      console.log(`Extracting ${players.length} players from match...`);
+
+      for (const player of players) {
+        try {
+          // Check if player already exists
+          const existingPlayer = await this.playerRepository.findOne({
+            where: { id: player.subject },
+          });
+
+          if (existingPlayer) {
+            console.log(
+              `Player ${player.gameName}#${player.tagLine} already exists, skipping...`,
+            );
+            continue;
+          }
+
+          // Fetch full player profile to get complete data
+          const playerProfile = await this.fetchPlayerProfile(
+            player.gameName,
+            player.tagLine,
+            region,
+          );
+
+          if (!playerProfile) {
+            console.log(
+              `Could not fetch profile for ${player.gameName}#${player.tagLine}, skipping...`,
+            );
+            continue;
+          }
+
+          console.log(
+            `Player profile response for ${player.gameName}#${player.tagLine}:`,
+            JSON.stringify(playerProfile.data, null, 2),
+          );
+
+          // Create new player entity with profile data
+          const newPlayer = new Player();
+          newPlayer.id = playerProfile.data.puuid;
+          newPlayer.name = playerProfile.data.name;
+          newPlayer.tag = playerProfile.data.tag;
+
+          // Safely handle potentially missing fields
+          try {
+            newPlayer.playerCard = playerProfile.data.card?.small || '';
+          } catch (cardError) {
+            console.warn(
+              `Failed to set player card for ${player.gameName}#${player.tagLine}:`,
+              (cardError as Error).message,
+            );
+            newPlayer.playerCard = '';
+          }
+
+          newPlayer.title = playerProfile.data.player_title || '';
+          newPlayer.preferredLevelBorder = '';
+          newPlayer.accountLevel = playerProfile.data.account_level || 0;
+          newPlayer.rosterId = null;
+          newPlayer.region = region;
+
+          await this.playerRepository.save(newPlayer);
+          console.log(`Added new player: ${player.gameName}#${player.tagLine}`);
+
+          // Add delay to avoid rate limiting
+          await this.delay(1000); // 1 second delay between player profile fetches
+        } catch (playerError) {
+          console.error(
+            `Failed to add player ${player.gameName}#${player.tagLine}:`,
+            (playerError as Error).message,
+          );
+          // Continue with other players
+        }
+      }
+    } catch (error) {
+      console.error(
+        'Failed to extract players from match:',
+        (error as Error).message,
+      );
+    }
+  }
+
+  private async fetchPlayerProfile(
+    name: string,
+    tag: string,
+    region: string,
+  ): Promise<HenrikPlayerProfileResponse | null> {
+    try {
+      const apiKey = this.configService.get<string>('HENRIK_API_KEY');
+      if (!apiKey) {
+        throw new Error('HENRIK_API_KEY not configured');
+      }
+
+      const url = `https://api.henrikdev.xyz/valorant/v2/account/${name}/${tag}`;
+      console.log(`Fetching player profile: ${url}`);
+
+      const response = await firstValueFrom(
+        this.httpService.get(url, {
+          headers: {
+            Authorization: apiKey,
+          },
+        }),
+      );
+
+      console.log(
+        `Raw player profile response for ${name}#${tag}:`,
+        JSON.stringify(response.data, null, 2),
+      );
+      return response.data as HenrikPlayerProfileResponse;
+    } catch (error) {
+      console.error(
+        `Failed to fetch player profile for ${name}#${tag}:`,
+        (error as Error).message,
+      );
+      return null;
+    }
   }
 
   private convertGameLengthToInterval(gameLengthMs: number): string {

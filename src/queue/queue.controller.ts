@@ -92,4 +92,13 @@ export class QueueController {
     const stats = await this.queueService.getQueueStats();
     return { status: 'success', data: stats };
   }
+
+  @Get('health')
+  async getHealth() {
+    return {
+      status: 'success',
+      message: 'Queue controller is responsive',
+      timestamp: new Date().toISOString(),
+    };
+  }
 }

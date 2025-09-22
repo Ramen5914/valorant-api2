@@ -1,15 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { Cron, CronExpression } from '@nestjs/schedule';
+import { Cron } from '@nestjs/schedule';
 import { PlayerMatchQueueService } from './player-match-queue.service';
 
 @Injectable()
 export class QueueSchedulerService {
   constructor(private readonly queueService: PlayerMatchQueueService) {}
 
-  // Run every day at 2 AM to fetch matches for all players
-  @Cron(CronExpression.EVERY_DAY_AT_2AM)
+  @Cron('*/5 * * * *')
   async handleQueueAllPlayers() {
-    console.log('Starting daily player queue population...');
+    console.log('Starting player queue population...');
 
     try {
       await this.queueService.addAllPlayersToQueue();

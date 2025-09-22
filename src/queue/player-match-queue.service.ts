@@ -56,20 +56,44 @@ export class PlayerMatchQueueService {
   }
 
   async getQueueStats() {
-    const waiting = await this.playerMatchQueue.getWaiting();
-    const active = await this.playerMatchQueue.getActive();
-    const completed = await this.playerMatchQueue.getCompleted();
-    const failed = await this.playerMatchQueue.getFailed();
+    try {
+      // Add timeout to prevent hanging
+      const timeout = 5000; // 5 seconds timeout
 
-    return {
-      waiting: waiting.length,
-      active: active.length,
-      completed: completed.length,
-      failed: failed.length,
-    };
-  }
+      const timeoutPromise = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('Queue stats timeout')), timeout),
+      );
 
-  // Add a player by their game name and tag
+      const statsPromise = Promise.all([
+        this.playerMatchQueue.getWaiting(),
+        this.playerMatchQueue.getActive(),
+        this.playerMatchQueue.getCompleted(),
+        this.playerMatchQueue.getFailed(),
+      ]);
+
+      const [waiting, active, completed, failed] = await Promise.race([
+        statsPromise,
+        timeoutPromise,
+      ]);
+
+      return {
+        waiting: waiting.length,
+        active: active.length,
+        completed: completed.length,
+        failed: failed.length,
+      };
+    } catch (error) {
+      console.error('Failed to get queue stats:', (error as Error).message);
+      // Return fallback stats if Redis/queue is not accessible
+      return {
+        waiting: 0,
+        active: 0,
+        completed: 0,
+        failed: 0,
+        error: 'Unable to connect to queue system',
+      };
+    }
+  } // Add a player by their game name and tag
   async addPlayerByNameTag(
     name: string,
     tag: string,
@@ -132,7 +156,7 @@ export class PlayerMatchQueueService {
         playerData.preferred_level_border?.id ||
         '00000000-0000-0000-0000-000000000000';
       newPlayer.accountLevel = playerData.account_level || 1;
-      newPlayer.premierTeam = null; // Will be set later if available
+      newPlayer.rosterId = null; // Will be set later if available
       newPlayer.region = region;
 
       const savedPlayer = await this.playerRepository.save(newPlayer);
@@ -217,7 +241,7 @@ export class PlayerMatchQueueService {
         playerData.preferred_level_border?.id ||
         '00000000-0000-0000-0000-000000000000';
       newPlayer.accountLevel = playerData.account_level || 1;
-      newPlayer.premierTeam = null;
+      newPlayer.rosterId = null;
       newPlayer.region = region;
 
       const savedPlayer = await this.playerRepository.save(newPlayer);

@@ -11,6 +11,10 @@ export class ExternalService implements OnModuleInit {
   constructor(private readonly httpService: HttpService) {}
 
   @Cron('0 0 * * *')
+  async refresh() {
+    await this.fetchMaps();
+  }
+
   async fetchMaps() {
     const res = await firstValueFrom(
       this.httpService.get('https://valorant-api.com/v1/maps'),
@@ -32,7 +36,7 @@ export class ExternalService implements OnModuleInit {
     return this.maps;
   }
 
-  onModuleInit() {
-    void this.fetchMaps();
+  async onModuleInit() {
+    await this.refresh();
   }
 }

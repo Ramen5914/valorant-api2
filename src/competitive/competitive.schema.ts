@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const Competitive = z.object({
+export const CompetitiveSchema = z.object({
   matchInfo: z.object({
     matchId: z.guid(),
     mapId: z.string(),
@@ -37,13 +37,6 @@ export const Competitive = z.object({
           ultimateCasts: z.int(),
         }),
       }),
-      roundDamage: z.array(
-        z.object({
-          round: z.int(),
-          receiver: z.guid(),
-          damage: z.int(),
-        }),
-      ),
       competitiveTier: z.int(),
       playerCard: z.guid(),
       playerTitle: z.guid(),
@@ -210,38 +203,6 @@ export const Competitive = z.object({
       ),
     }),
   ),
-  kills: z.array(
-    z.object({
-      gameTime: z.int(),
-      roundTime: z.int(),
-      round: z.int(),
-      killer: z.guid(),
-      victim: z.guid(),
-      victimLocation: z.object({
-        x: z.int(),
-        y: z.int(),
-      }),
-      assistants: z.array(z.guid()),
-      playerLocations: z.array(
-        z.object({
-          subject: z.guid(),
-          viewRadians: z.number(),
-          location: z.object({
-            x: z.int(),
-            y: z.int(),
-          }),
-        }),
-      ),
-      finishingDamage: z.object({
-        damageType: z.enum(['Weapon', 'Ability', 'Bomb', 'Melee', 'Fall']),
-        damageItem: z
-          .guid()
-          .or(z.enum(['Ultimate', 'Ability1', 'Ability2', 'GrenadeAbility']))
-          .or(z.literal('')),
-        isSecondaryFireMode: z.boolean(),
-      }),
-    }),
-  ),
 });
 
-export type Competitive = z.infer<typeof Competitive>;
+export type CompetitiveSchema = z.infer<typeof CompetitiveSchema>;

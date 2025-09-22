@@ -1,4 +1,5 @@
 import { Column, Entity, Index, OneToMany, PrimaryColumn } from 'typeorm';
+import { Team } from './team.entity';
 import { PlayerStat } from './playerStat.entity';
 
 @Entity()
@@ -25,6 +26,14 @@ export class Competitive {
   @Column('uuid')
   seasonId: string;
 
-  @OneToMany(() => PlayerStat, (playerStat) => playerStat.matchId)
+  @OneToMany(() => Team, (team) => team.match, {
+    cascade: true,
+    eager: true,
+  })
+  teams: Team[];
+
+  @OneToMany(() => PlayerStat, (playerStat) => playerStat.match, {
+    cascade: true,
+  })
   playerStats: PlayerStat[];
 }

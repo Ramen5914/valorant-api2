@@ -10,6 +10,7 @@ import { Player } from '../player/entities/player.entity';
 import { QueueSchedulerService } from './queue-scheduler.service';
 import { QueueController } from './queue.controller';
 import { Competitive } from '../competitive/entities/competitive.entity';
+import { CompetitiveModule } from '../competitive/competitive.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { Competitive } from '../competitive/entities/competitive.entity';
     TypeOrmModule.forFeature([Player, Competitive]),
     ScheduleModule.forRoot(),
     ConfigModule,
+    CompetitiveModule,
   ],
   controllers: [QueueController],
   providers: [
