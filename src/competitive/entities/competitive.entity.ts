@@ -1,4 +1,11 @@
-import { Column, Entity, Index, OneToMany, PrimaryColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  Index,
+  OneToMany,
+  PrimaryColumn,
+} from 'typeorm';
 import { Team } from './team.entity';
 import { PlayerStat } from './playerStat.entity';
 
@@ -6,6 +13,9 @@ import { PlayerStat } from './playerStat.entity';
 export class Competitive {
   @PrimaryColumn('uuid')
   id: string;
+
+  @CreateDateColumn()
+  createAt: Date;
 
   @Column({ length: 64 })
   version: string;
