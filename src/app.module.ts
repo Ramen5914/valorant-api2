@@ -29,7 +29,7 @@ import { QueueModule } from './queue/queue.module';
       password: process.env.DB_PASSWORD || 'secret',
       database: process.env.DB_NAME || 'valorant_api',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: process.env.NODE_ENV !== 'production', // Auto-create tables in dev
+      synchronize: process.env.NODE_ENV !== 'production',
       logging: process.env.NODE_ENV === 'development',
     }),
     ExternalModule,
