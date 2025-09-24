@@ -259,7 +259,6 @@ export class PlayerMatchProcessor {
           const playerProfile = await this.fetchPlayerProfile(
             player.gameName,
             player.tagLine,
-            region,
           );
 
           if (!playerProfile) {
@@ -321,7 +320,6 @@ export class PlayerMatchProcessor {
   private async fetchPlayerProfile(
     name: string,
     tag: string,
-    region: string,
   ): Promise<HenrikPlayerProfileResponse | null> {
     try {
       const apiKey = this.configService.get<string>('HENRIK_API_KEY');

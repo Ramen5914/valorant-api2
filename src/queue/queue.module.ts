@@ -11,6 +11,7 @@ import { QueueSchedulerService } from './queue-scheduler.service';
 import { QueueController } from './queue.controller';
 import { Competitive } from '../competitive/entities/competitive.entity';
 import { CompetitiveModule } from '../competitive/competitive.module';
+import { PlayerModule } from 'src/player/player.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { CompetitiveModule } from '../competitive/competitive.module';
     ScheduleModule.forRoot(),
     ConfigModule,
     CompetitiveModule,
+    PlayerModule,
   ],
   controllers: [QueueController],
   providers: [

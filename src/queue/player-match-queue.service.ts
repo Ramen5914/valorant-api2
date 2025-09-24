@@ -94,11 +94,7 @@ export class PlayerMatchQueueService {
       };
     }
   } // Add a player by their game name and tag
-  async addPlayerByNameTag(
-    name: string,
-    tag: string,
-    region: string,
-  ): Promise<Player | null> {
+  async addPlayerByNameTag(name: string, tag: string): Promise<Player | null> {
     try {
       const apiKey = this.configService.get<string>('HENRIK_API_KEY');
       if (!apiKey) {
@@ -110,12 +106,14 @@ export class PlayerMatchQueueService {
         this.httpService.get<{
           data: {
             puuid: string;
+            region: string;
+            account_level: number;
             name: string;
             tag: string;
-            card: { id: string };
-            title: { id: string };
-            preferred_level_border: { id: string };
-            account_level: number;
+            card: string;
+            title: string;
+            platforms: string[];
+            updated_at: string;
           };
         }>(`https://api.henrikdev.xyz/valorant/v2/account/${name}/${tag}`, {
           headers: {
@@ -144,27 +142,23 @@ export class PlayerMatchQueueService {
       }
 
       // Create new player
-      const newPlayer = new Player();
-      newPlayer.id = playerData.puuid;
-      newPlayer.name = playerData.name;
-      newPlayer.tag = playerData.tag;
-      newPlayer.playerCard =
-        playerData.card?.id || '00000000-0000-0000-0000-000000000000';
-      newPlayer.title =
-        playerData.title?.id || '00000000-0000-0000-0000-000000000000';
-      newPlayer.preferredLevelBorder =
-        playerData.preferred_level_border?.id ||
-        '00000000-0000-0000-0000-000000000000';
-      newPlayer.accountLevel = playerData.account_level || 1;
-      newPlayer.rosterId = null; // Will be set later if available
-      newPlayer.region = region;
+      const newPlayer = this.playerRepository.create({
+        id: playerData.puuid,
+        name: playerData.name,
+        tag: playerData.tag,
+        playerCard: playerData.card,
+        title: playerData.title,
+        preferredLevelBorder: null,
+        accountLevel: playerData.account_level,
+        region: playerData.region,
+        rosterId: null,
+      });
 
       const savedPlayer = await this.playerRepository.save(newPlayer);
       console.log(
         `Created and saved player ${name}#${tag} with PUUID ${playerData.puuid}`,
       );
 
-      // Add to queue for match processing
       await this.addPlayerToQueue(savedPlayer);
 
       return savedPlayer;

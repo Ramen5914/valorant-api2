@@ -1,12 +1,17 @@
 import { Controller, Post, Get, Body } from '@nestjs/common';
 import { QueueSchedulerService } from './queue-scheduler.service';
 import { PlayerMatchQueueService } from './player-match-queue.service';
+import { HttpService } from '@nestjs/axios';
+import { PlayerService } from 'src/player/player.service';
+import { Player } from 'src/player/entities/player.entity';
 
 @Controller('queue')
 export class QueueController {
   constructor(
     private readonly queueSchedulerService: QueueSchedulerService,
     private readonly queueService: PlayerMatchQueueService,
+    private readonly httpService: HttpService,
+    private readonly playerService: PlayerService,
   ) {}
 
   @Post('trigger')
@@ -28,36 +33,13 @@ export class QueueController {
   }
 
   @Post('add-player')
-  async addPlayerByNameTag(
-    @Body() body: { name: string; tag: string; region: string },
-  ) {
-    const { name, tag, region } = body;
-
-    if (!name || !tag || !region) {
-      return {
-        status: 'error',
-        message: 'Name, tag, and region are required',
-      };
-    }
-
-    const player = await this.queueService.addPlayerByNameTag(
-      name,
-      tag,
-      region,
+  async addPlayerByName(@Body() body: { name: string; tag: string }) {
+    const player = await this.playerService.createPlayerWithApi(
+      body.name,
+      body.tag,
     );
 
-    if (player) {
-      return {
-        status: 'success',
-        message: `Player ${name}#${tag} added successfully`,
-        data: player,
-      };
-    } else {
-      return {
-        status: 'error',
-        message: `Failed to add player ${name}#${tag}`,
-      };
-    }
+    void this.queueService.addPlayerByPuuid(player.id, player.region);
   }
 
   @Post('add-player-by-puuid')
