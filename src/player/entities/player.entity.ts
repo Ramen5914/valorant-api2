@@ -1,10 +1,23 @@
 import { PlayerStat } from 'src/competitive/entities/playerStat.entity';
-import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  OneToMany,
+  PrimaryColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity()
 export class Player {
   @PrimaryColumn('uuid')
   id: string;
+
+  @CreateDateColumn()
+  createAt: Date;
+
+  @UpdateDateColumn()
+  updateAt: Date;
 
   @Column()
   name: string;
@@ -14,26 +27,20 @@ export class Player {
   @Column('boolean', { default: false })
   isPublic: boolean;
 
-  @Column('uuid', { nullable: true })
-  playerCard: string | null;
-  @Column('uuid', { nullable: true })
-  title: string | null;
-  @Column('uuid', { nullable: true })
+  @Column('uuid')
+  playerCard: string;
+  @Column('uuid')
+  title: string;
+  @Column('uuid', { nullable: true, default: null })
   preferredLevelBorder: string | null;
   @Column('int')
   accountLevel: number;
 
-  @Column('uuid', { nullable: true })
+  @Column('uuid', { nullable: true, default: null })
   rosterId: string | null;
-  @Column('varchar', { nullable: true })
-  rosterName: string | null;
-  @Column('varchar', { nullable: true })
-  rosterTag: string | null;
-  @Column('varchar', { nullable: true })
-  plating: string | null;
-  @Column('boolean', { nullable: true })
+  @Column('boolean', { nullable: true, default: null })
   showTag: boolean | null;
-  @Column('boolean', { nullable: true })
+  @Column('boolean', { nullable: true, default: null })
   showPlating: boolean | null;
 
   @Column({ length: 8 })
