@@ -21,8 +21,7 @@ Content-Type: application/json
 
 {
   "name": "Espeon",
-  "tag": "PKRUS",
-  "region": "na"
+  "tag": "PKRUS"
 }
 
 ### Add a player by PUUID (if you already have their PUUID)
@@ -82,3 +81,8 @@ Content-Length: 101
   "value": "8a9b072e-ac5e-4f47-ae1a-6594b82d7e1d",
   "region": "na"
 }
+
+###
+GET https://api.henrikdev.xyz/valorant/v2/account/Espeon/PKRUS
+accept: application/json
+Authorization: HDEV-c9573553-2801-4b61-b140-cd30a247df60
