@@ -23,7 +23,7 @@ import { QueueModule } from './queue/queue.module';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.DB_HOST || '192.168.220.153',
+      host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT || '5432'),
       username: process.env.DB_USERNAME || 'admin',
       password: process.env.DB_PASSWORD || 'secret',
