@@ -8,13 +8,14 @@ import {
 } from 'typeorm';
 import { Player } from 'src/player/entities/player.entity';
 import { Competitive } from './competitive.entity';
+import { Team } from './team.entity';
 
 @Entity()
 export class PlayerStat {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Player)
+  @ManyToOne(() => Player, (player) => player.id)
   @JoinColumn({ name: 'playerId' })
   player: Player;
 
@@ -52,9 +53,13 @@ export class PlayerStat {
   @Column('int')
   competitiveTier: number;
 
-  @ManyToOne(() => Competitive)
+  @ManyToOne(() => Competitive, (competitive) => competitive.id)
   @JoinColumn({ name: 'matchId' })
   match: Competitive;
+
+  @ManyToOne(() => Team, (team) => team.id)
+  @JoinColumn({ name: 'teamId' })
+  team: Team;
 
   @Index()
   @Column('uuid')

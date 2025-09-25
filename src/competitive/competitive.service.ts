@@ -5,6 +5,7 @@ import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { PlayerStat } from './entities/playerStat.entity';
 import { ExternalService } from '../external/external.service';
+import { Player } from 'src/player/entities/player.entity';
 
 @Injectable()
 export class CompetitiveService {

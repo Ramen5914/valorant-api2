@@ -44,21 +44,16 @@ export class PlayerMatchProcessor {
 
   @Process('fetch-player-matches')
   async handlePlayerMatches(job: Job<PlayerMatchJobData>) {
-    const { playerId, playerName, playerTag, region } = job.data;
+    const { playerId, region } = job.data;
 
     try {
-      console.log(`Processing matches for player: ${playerName}#${playerTag}`);
+      console.log(`Processing matches for player: ${playerId}`);
 
       // Fetch match IDs from Valorant API
-      const matchIds = await this.fetchPlayerMatches(
-        playerName,
-        playerTag,
-        region,
-        playerId, // Pass the PUUID directly
-      );
+      const matchIds = await this.fetchPlayerMatches(playerId, region);
 
       if (!matchIds || matchIds.length === 0) {
-        console.log(`No matches found for player: ${playerName}#${playerTag}`);
+        console.log(`No matches found for player: ${playerId}`);
         return;
       }
 
@@ -70,21 +65,19 @@ export class PlayerMatchProcessor {
       }
 
       console.log(
-        `Successfully processed ${matchIds.length} matches for ${playerName}#${playerTag}`,
+        `Successfully processed ${matchIds.length} matches for ${playerId}`,
       );
     } catch (error) {
       console.error(
-        `Failed to process matches for ${playerName}#${playerTag}:`,
+        `Failed to process matches for ${playerId}:`,
         (error as Error).message,
       );
       throw error; // This will mark the job as failed and trigger retries
     }
   }
   private async fetchPlayerMatches(
-    name: string,
-    tag: string,
-    region: string,
     puuid: string,
+    region: string,
   ): Promise<string[]> {
     try {
       const apiKey = this.configService.get<string>('HENRIK_API_KEY');
@@ -92,9 +85,7 @@ export class PlayerMatchProcessor {
         throw new Error('HENRIK_API_KEY not configured');
       }
 
-      console.log(
-        `Fetching matches for ${name}#${tag} (PUUID: ${puuid}) in region: ${region}`,
-      );
+      console.log(`Fetching matches for ${puuid} in region: ${region}`);
 
       // Use Henrik's raw endpoint with matchhistory type for PUUID
       const matchListResponse = await firstValueFrom(
@@ -135,7 +126,7 @@ export class PlayerMatchProcessor {
         .filter(Boolean);
     } catch (error) {
       console.error(
-        `Failed to fetch matches from API for ${name}#${tag}:`,
+        `Failed to fetch matches from API for ${puuid}:`,
         (error as Error).message,
       );
       return [];

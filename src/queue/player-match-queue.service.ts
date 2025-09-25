@@ -10,8 +10,6 @@ import { Player } from '../player/entities/player.entity';
 
 export interface PlayerMatchJobData {
   playerId: string;
-  playerName: string;
-  playerTag: string;
   region: string;
 }
 
@@ -28,8 +26,6 @@ export class PlayerMatchQueueService {
   async addPlayerToQueue(player: Player): Promise<void> {
     const jobData: PlayerMatchJobData = {
       playerId: player.id,
-      playerName: player.name,
-      playerTag: player.tag,
       region: player.region,
     };
 
@@ -46,7 +42,12 @@ export class PlayerMatchQueueService {
   }
 
   async addAllPlayersToQueue(): Promise<void> {
-    const players = await this.playerRepository.find();
+    const players = await this.playerRepository.find({
+      select: {
+        id: true,
+        region: true,
+      },
+    });
 
     console.log(`Adding ${players.length} players to the queue`);
 
