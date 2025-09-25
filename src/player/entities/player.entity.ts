@@ -1,4 +1,4 @@
-import { PlayerStat } from 'src/competitive/entities/playerStat.entity';
+import { CompetitivePlayer } from 'src/competitive/entities/playerStat.entity';
 import {
   Column,
   CreateDateColumn,
@@ -46,6 +46,6 @@ export class Player {
   @Column({ length: 8 })
   region: string;
 
-  @OneToMany(() => PlayerStat, (playerStat) => playerStat.player)
-  matchStats: PlayerStat[];
+  @OneToMany(() => CompetitivePlayer, (playerStat) => playerStat.player)
+  matchStats: CompetitivePlayer[];
 }

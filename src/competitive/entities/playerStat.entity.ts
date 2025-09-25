@@ -7,11 +7,11 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Player } from 'src/player/entities/player.entity';
-import { Competitive } from './competitive.entity';
+import { CompetitiveMatch } from './competitive.entity';
 import { Team } from './team.entity';
 
-@Entity()
-export class PlayerStat {
+@Entity('competitive_player')
+export class CompetitivePlayer {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -53,9 +53,9 @@ export class PlayerStat {
   @Column('int')
   competitiveTier: number;
 
-  @ManyToOne(() => Competitive, (competitive) => competitive.id)
+  @ManyToOne(() => CompetitiveMatch, (competitiveMatch) => competitiveMatch.id)
   @JoinColumn({ name: 'matchId' })
-  match: Competitive;
+  match: CompetitiveMatch;
 
   @ManyToOne(() => Team, (team) => team.id)
   @JoinColumn({ name: 'teamId' })

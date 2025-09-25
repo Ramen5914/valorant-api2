@@ -3,7 +3,7 @@ import { CompetitiveSchema as CompetitiveSchema } from './competitive.schema';
 import { Competitive } from './entities/competitive.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { PlayerStat } from './entities/playerStat.entity';
+import { CompetitivePlayer } from './entities/playerStat.entity';
 import { ExternalService } from '../external/external.service';
 import { Player } from 'src/player/entities/player.entity';
 
@@ -12,8 +12,8 @@ export class CompetitiveService {
   constructor(
     @InjectRepository(Competitive)
     private competitiveRepository: Repository<Competitive>,
-    @InjectRepository(PlayerStat)
-    private playerStatRepository: Repository<PlayerStat>,
+    @InjectRepository(CompetitivePlayer)
+    private playerStatRepository: Repository<CompetitivePlayer>,
     @Inject()
     private externalService: ExternalService,
   ) {}
@@ -69,7 +69,7 @@ export class CompetitiveService {
     return await this.competitiveRepository.save(competitiveMatch);
   }
 
-  async findMatchesByPlayerId(playerId: string): Promise<PlayerStat[]> {
+  async findMatchesByPlayerId(playerId: string): Promise<CompetitivePlayer[]> {
     const playerMatches = await this.playerStatRepository.find({
       where: { playerId: playerId },
       relations: ['match'],

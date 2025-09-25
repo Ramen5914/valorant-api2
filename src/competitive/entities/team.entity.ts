@@ -6,7 +6,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Competitive } from './competitive.entity';
+import { CompetitiveMatch } from './competitive.entity';
 
 @Entity()
 export class Team {
@@ -28,9 +28,12 @@ export class Team {
   @Column('int')
   points: number;
 
-  @ManyToOne(() => Competitive, (competitive) => competitive.teams)
+  @ManyToOne(
+    () => CompetitiveMatch,
+    (competitiveMatch) => competitiveMatch.teams,
+  )
   @JoinColumn({ name: 'matchId' })
-  match: Competitive;
+  match: CompetitiveMatch;
 
   @Index()
   @Column('uuid')

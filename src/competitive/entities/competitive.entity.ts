@@ -7,10 +7,10 @@ import {
   PrimaryColumn,
 } from 'typeorm';
 import { Team } from './team.entity';
-import { PlayerStat } from './playerStat.entity';
+import { CompetitivePlayer } from './playerStat.entity';
 
-@Entity()
-export class Competitive {
+@Entity('competitive_match')
+export class CompetitiveMatch {
   @PrimaryColumn('uuid')
   id: string;
 
@@ -42,8 +42,8 @@ export class Competitive {
   })
   teams: Team[];
 
-  @OneToMany(() => PlayerStat, (playerStat) => playerStat.match, {
+  @OneToMany(() => CompetitivePlayer, (playerStat) => playerStat.match, {
     cascade: true,
   })
-  playerStats: PlayerStat[];
+  playerStats: CompetitivePlayer[];
 }
