@@ -1,24 +1,23 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { CompetitiveSchema as CompetitiveSchema } from './competitive.schema';
-import { Competitive } from './entities/competitive.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CompetitivePlayer } from './entities/playerStat.entity';
 import { ExternalService } from '../external/external.service';
-import { Player } from 'src/player/entities/player.entity';
+import { CompetitiveMatch } from './entities/competitive.entity';
 
 @Injectable()
 export class CompetitiveService {
   constructor(
-    @InjectRepository(Competitive)
-    private competitiveRepository: Repository<Competitive>,
+    @InjectRepository(CompetitiveMatch)
+    private competitiveRepository: Repository<CompetitiveMatch>,
     @InjectRepository(CompetitivePlayer)
     private playerStatRepository: Repository<CompetitivePlayer>,
     @Inject()
     private externalService: ExternalService,
   ) {}
 
-  async createMatch(match: CompetitiveSchema): Promise<Competitive> {
+  async createMatch(match: CompetitiveSchema): Promise<CompetitiveMatch> {
     const existingMatch = await this.competitiveRepository.findOne({
       where: { id: match.matchInfo.matchId },
     });

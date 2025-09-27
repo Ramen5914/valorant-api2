@@ -6,9 +6,9 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Player } from 'src/player/entities/player.entity';
 import { CompetitiveMatch } from './competitive.entity';
 import { Team } from './team.entity';
+import { Player } from 'src/player/entities/player.entity';
 
 @Entity('competitive_player')
 export class CompetitivePlayer {
