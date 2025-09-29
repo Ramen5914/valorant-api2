@@ -20,7 +20,7 @@
 		"seasonId": "5adc33fa-4f30-2899-f131-6fba64c5dd3a",
 		"completionState": "Completed",
 		"platformType": "pc",
-		"premierMatchInfo": {},
+		"premierMatchInfo": { "premierSeasonId": null, "premierEventId": null },
 		"partyRRPenalties": {
 			"d1a6ddf8-331c-427a-91d4-ed9cd5bafd13": 0,
 			"d599cfcc-22a3-4be3-92a5-dbfd49980f5e": 0.25
