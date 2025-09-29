@@ -12,6 +12,7 @@ import { QueueController } from './queue.controller';
 import { CompetitiveModule } from '../competitive/competitive.module';
 import { PlayerModule } from 'src/player/player.module';
 import { CompetitiveMatch } from 'src/competitive/entities/competitive.entity';
+import { ExternalModule } from 'src/external/external.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { CompetitiveMatch } from 'src/competitive/entities/competitive.entity';
     ConfigModule,
     CompetitiveModule,
     PlayerModule,
+    ExternalModule,
   ],
   controllers: [QueueController],
   providers: [
