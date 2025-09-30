@@ -20,24 +20,24 @@ export class ExternalService implements OnModuleInit {
 
   async getMatchesByPuuid(puuid: string, region: string): Promise<MatchlistV4> {
     const res = await firstValueFrom(
-      this.httpService.get(
+      this.httpService.get<{ data: any }>(
         `https://api.henrikdev.xyz/valorant/v4/by-puuid/matches/${region}/pc/${puuid}`,
         this.axiosConfig,
       ),
     );
 
-    return MatchlistV4.parse(res.data);
+    return MatchlistV4.parse(res.data.data);
   }
 
   async getAccountByName(name: string, tag: string): Promise<AccountV2> {
     const res = await firstValueFrom(
-      this.httpService.get(
+      this.httpService.get<{ data: any }>(
         `https://api.henrikdev.xyz/valorant/v2/account/${name}/${tag}`,
         this.axiosConfig,
       ),
     );
 
-    return AccountV2.parse(res.data);
+    return AccountV2.parse(res.data.data);
   }
 
   async getMatchById(id: string, region: string): Promise<CompetitiveSchema> {
@@ -65,13 +65,13 @@ export class ExternalService implements OnModuleInit {
 
   async updateMaps() {
     const res = await firstValueFrom(
-      this.httpService.get('https://valorant-api.com/v1/maps'),
+      this.httpService.get<{ data: any }>('https://valorant-api.com/v1/maps'),
     );
 
-    const maps = MapsResponse.parse(res.data);
+    const maps = MapsResponse.parse(res.data.data);
 
     const mapsRecord: Record<string, string> = {};
-    for (const map of maps.data) {
+    for (const map of maps) {
       if (map.mapUrl && map.uuid) {
         mapsRecord[map.mapUrl] = map.uuid;
       }
