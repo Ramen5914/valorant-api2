@@ -13,8 +13,7 @@ export class PlayerService {
   ) {}
 
   async createPlayerWithApi(name: string, tag: string): Promise<Player> {
-    const account = (await this.externalService.getAccountByName(name, tag))
-      .data;
+    const account = await this.externalService.getAccountByName(name, tag);
 
     const newPlayer = this.playerRepository.create({
       id: account.puuid,
