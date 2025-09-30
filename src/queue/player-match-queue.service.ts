@@ -87,8 +87,7 @@ export class PlayerMatchQueueService {
   }
 
   async addPlayerByNameTag(name: string, tag: string): Promise<Player> {
-    const account = (await this.externalService.getAccountByName(name, tag))
-      .data;
+    const account = await this.externalService.getAccountByName(name, tag);
 
     const existingPlayer = await this.playerService.getPlayerById(
       account.puuid,

@@ -55,9 +55,10 @@ export class PlayerMatchProcessor {
     console.log(`Fetching matches for ${puuid} in region: ${region}`);
 
     // Use Henrik's raw endpoint with matchhistory type for PUUID
-    const matchListResponse = (
-      await this.externalService.getMatchesByPuuid(puuid, region)
-    ).data;
+    const matchListResponse = await this.externalService.getMatchesByPuuid(
+      puuid,
+      region,
+    );
 
     // All matches should already be competitive due to the query filter
     const competitiveMatches = matchListResponse.filter(
