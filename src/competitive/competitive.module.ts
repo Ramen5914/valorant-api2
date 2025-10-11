@@ -1,20 +1,30 @@
 import { Module } from '@nestjs/common';
-import { CompetitiveService } from './competitive.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { BombEvent } from './entities/bombEvent.entity';
+import { DamageEvent } from './entities/damageEvent.entity';
+import { Match } from './entities/match.entity';
+import { Player } from './entities/player.entity';
+import { KillPlayerLocation } from './entities/killPlayerLocation.entity';
+import { Round } from './entities/round.entity';
+import { KillEvent } from './entities/killEvent.entity';
 import { Team } from './entities/team.entity';
-import { CompetitivePlayer } from './entities/playerStat.entity';
+import { ExternalModule } from 'src/external/external.module';
 import { CompetitiveController } from './competitive.controller';
-import { ExternalModule } from '../external/external.module';
-import { CompetitiveMatch } from './entities/competitive.entity';
-import { Player } from 'src/player/entities/player.entity';
+import { CompetitiveService } from './competitive.service';
+import { BombPlayerLocation } from './entities/bombPlayerLocation.entity';
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([
-      CompetitiveMatch,
-      Team,
-      CompetitivePlayer,
+      BombEvent,
+      BombPlayerLocation,
+      DamageEvent,
+      KillEvent,
+      KillPlayerLocation,
+      Match,
       Player,
+      Round,
+      Team,
     ]),
     ExternalModule,
   ],

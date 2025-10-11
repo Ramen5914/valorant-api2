@@ -6,13 +6,13 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { ConfigModule } from '@nestjs/config';
 import { PlayerMatchQueueService } from './player-match-queue.service';
 import { PlayerMatchProcessor } from './player-match.processor';
-import { Player } from '../player/entities/player.entity';
+import { Account } from '../account/entities/account.entity';
 import { QueueSchedulerService } from './queue-scheduler.service';
 import { QueueController } from './queue.controller';
 import { CompetitiveModule } from '../competitive/competitive.module';
-import { PlayerModule } from 'src/player/player.module';
-import { CompetitiveMatch } from 'src/competitive/entities/competitive.entity';
+import { AccountModule } from 'src/account/account.module';
 import { ExternalModule } from 'src/external/external.module';
+import { Match } from 'src/competitive/entities/match.entity';
 
 @Module({
   imports: [
@@ -20,11 +20,11 @@ import { ExternalModule } from 'src/external/external.module';
       name: 'player-matches',
     }),
     HttpModule,
-    TypeOrmModule.forFeature([Player, CompetitiveMatch]),
+    TypeOrmModule.forFeature([Account, Match]),
     ScheduleModule.forRoot(),
     ConfigModule,
     CompetitiveModule,
-    PlayerModule,
+    AccountModule,
     ExternalModule,
   ],
   controllers: [QueueController],

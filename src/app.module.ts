@@ -7,7 +7,7 @@ import { AppService } from './app.service';
 import { ExternalModule } from './external/external.module';
 import { CompetitiveController } from './competitive/competitive.controller';
 import { CompetitiveModule } from './competitive/competitive.module';
-import { PlayerModule } from './player/player.module';
+import { AccountModule } from './account/account.module';
 import { QueueModule } from './queue/queue.module';
 
 @Module({
@@ -34,7 +34,7 @@ import { QueueModule } from './queue/queue.module';
     }),
     ExternalModule,
     CompetitiveModule,
-    PlayerModule,
+    AccountModule,
     QueueModule,
   ],
   controllers: [AppController, CompetitiveController],
