@@ -9,8 +9,8 @@ POST http://localhost:4000/queue/add-player
 Content-Type: application/json
 
 {
-  "name": "PenguinInAHat",
-  "tag": "BALD"
+  "name": "Espeon",
+  "tag": "PKRUS"
 }
 
 ### Add all existing players to queue (existing endpoint)
