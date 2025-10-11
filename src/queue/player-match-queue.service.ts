@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { InjectQueue } from '@nestjs/bull';
 import type { Queue } from 'bull';
-import { Player } from '../player/entities/player.entity';
+import { Account } from '../account/entities/account.entity';
 import { ExternalService } from 'src/external/external.service';
-import { PlayerService } from 'src/player/player.service';
+import { AccountService } from 'src/account/account.service';
 
 export interface PlayerMatchJobData {
   playerId: string;
@@ -15,10 +15,10 @@ export class PlayerMatchQueueService {
   constructor(
     @InjectQueue('player-matches') private playerMatchQueue: Queue,
     private readonly externalService: ExternalService,
-    private readonly playerService: PlayerService,
+    private readonly playerService: AccountService,
   ) {}
 
-  async addPlayerToQueue(player: Player): Promise<void> {
+  async addPlayerToQueue(player: Account): Promise<void> {
     const jobData: PlayerMatchJobData = {
       playerId: player.id,
       region: player.region,
@@ -37,7 +37,7 @@ export class PlayerMatchQueueService {
   }
 
   async addAllPlayersToQueue(): Promise<void> {
-    const players = await this.playerService.getAllPlayers();
+    const players = await this.playerService.getAllAccounts();
 
     console.log(`Adding ${players.length} players to the queue`);
 
@@ -86,10 +86,10 @@ export class PlayerMatchQueueService {
     }
   }
 
-  async addPlayerByNameTag(name: string, tag: string): Promise<Player> {
+  async addPlayerByNameTag(name: string, tag: string): Promise<Account> {
     const account = await this.externalService.getAccountByName(name, tag);
 
-    const existingPlayer = await this.playerService.getPlayerById(
+    const existingPlayer = await this.playerService.getAccountById(
       account.puuid,
     );
 

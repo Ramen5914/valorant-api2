@@ -1,7 +1,12 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable, OnModuleInit } from '@nestjs/common';
 import { Cron } from '@nestjs/schedule';
-import { AccountV2, MapsResponse, MatchlistV4 } from './external.schema';
+import {
+  AccountV2,
+  CeremoniesResponse,
+  MapsResponse,
+  MatchlistV4,
+} from './external.schema';
 import { firstValueFrom } from 'rxjs';
 import { AxiosRequestConfig } from 'axios';
 import { CompetitiveSchema } from 'src/competitive/competitive.schema';
@@ -9,6 +14,23 @@ import { CompetitiveSchema } from 'src/competitive/competitive.schema';
 @Injectable()
 export class ExternalService implements OnModuleInit {
   private maps: Record<string, string>;
+  private ceremonies: Record<string, string>;
+
+  // Store latest Henrik API rate limit headers
+  private henrikRateLimit?: {
+    remaining?: number;
+    reset?: number;
+    limit?: number;
+  };
+  /**
+   * Returns the latest Henrik API rate limit info (if available) after any RAW call.
+   * { remaining, reset, limit } or undefined if not available.
+   */
+  getHenrikRateLimit():
+    | { remaining?: number; reset?: number; limit?: number }
+    | undefined {
+    return this.henrikRateLimit;
+  }
 
   private axiosConfig: AxiosRequestConfig = {
     headers: {
@@ -41,8 +63,7 @@ export class ExternalService implements OnModuleInit {
   }
 
   async getMatchById(id: string, region: string): Promise<CompetitiveSchema> {
-    const config = this.axiosConfig;
-    config.data = {
+    const body = {
       type: 'matchdetails',
       value: id,
       region: region,
@@ -51,9 +72,28 @@ export class ExternalService implements OnModuleInit {
     const res = await firstValueFrom(
       this.httpService.post<{ data: any }>(
         'https://api.henrikdev.xyz/valorant/v1/raw',
+        body,
         this.axiosConfig,
       ),
     );
+
+    // Save rate limit info from headers if present
+    if (res && res.headers) {
+      this.henrikRateLimit = {
+        remaining:
+          res.headers['x-ratelimit-remaining'] !== undefined
+            ? Number(res.headers['x-ratelimit-remaining'])
+            : undefined,
+        reset:
+          res.headers['x-ratelimit-reset'] !== undefined
+            ? Number(res.headers['x-ratelimit-reset'])
+            : undefined,
+        limit:
+          res.headers['x-ratelimit-limit'] !== undefined
+            ? Number(res.headers['x-ratelimit-limit'])
+            : undefined,
+      };
+    }
 
     return CompetitiveSchema.parse(res.data.data);
   }
@@ -72,9 +112,7 @@ export class ExternalService implements OnModuleInit {
 
     const mapsRecord: Record<string, string> = {};
     for (const map of maps) {
-      if (map.mapUrl && map.uuid) {
-        mapsRecord[map.mapUrl] = map.uuid;
-      }
+      mapsRecord[map.mapUrl] = map.uuid;
     }
 
     this.maps = mapsRecord;
@@ -82,6 +120,34 @@ export class ExternalService implements OnModuleInit {
 
   getMaps(): Record<string, string> {
     return this.maps;
+  }
+
+  async updateCeremonies() {
+    const res = await firstValueFrom(
+      this.httpService.get<{ data: any }>(
+        'https://valorant-api.com/v1/ceremonies',
+      ),
+    );
+
+    const ceremonies = CeremoniesResponse.parse(res.data.data);
+
+    const ceremoniesRecord: Record<string, string> = {};
+    for (const ceremony of ceremonies) {
+      ceremoniesRecord[ceremony.displayName] = ceremony.uuid;
+    }
+
+    this.ceremonies = ceremoniesRecord;
+  }
+
+  getCeremonies(): Record<string, string> {
+    return this.ceremonies;
+  }
+
+  /**
+   * Awaitable delay helper for rate limiting and queue control.
+   */
+  async delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   async onModuleInit() {

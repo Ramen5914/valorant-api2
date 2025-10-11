@@ -1,21 +1,21 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Player } from './entities/player.entity';
+import { Account } from './entities/account.entity';
 import { Repository } from 'typeorm';
 import { ExternalService } from 'src/external/external.service';
 
 @Injectable()
-export class PlayerService {
+export class AccountService {
   constructor(
-    @InjectRepository(Player)
-    private playerRepository: Repository<Player>,
+    @InjectRepository(Account)
+    private accountRepository: Repository<Account>,
     private readonly externalService: ExternalService,
   ) {}
 
-  async createPlayerWithApi(name: string, tag: string): Promise<Player> {
+  async createPlayerWithApi(name: string, tag: string): Promise<Account> {
     const account = await this.externalService.getAccountByName(name, tag);
 
-    const newPlayer = this.playerRepository.create({
+    const newAccount = this.accountRepository.create({
       id: account.puuid,
       name: account.name,
       tag: account.tag,
@@ -25,7 +25,7 @@ export class PlayerService {
       region: account.region,
     });
 
-    return this.playerRepository.save(newPlayer);
+    return this.accountRepository.save(newAccount);
   }
 
   async createPlayer(
@@ -36,8 +36,8 @@ export class PlayerService {
     title: string,
     accountLevel: number,
     region: string,
-  ): Promise<Player> {
-    return this.playerRepository.save({
+  ): Promise<Account> {
+    return this.accountRepository.save({
       id,
       name,
       tag,
@@ -48,11 +48,11 @@ export class PlayerService {
     });
   }
 
-  async getPlayerById(id: string): Promise<Player | null> {
-    return this.playerRepository.findOne({ where: { id } });
+  async getAccountById(id: string): Promise<Account | null> {
+    return this.accountRepository.findOne({ where: { id } });
   }
 
-  async getAllPlayers(): Promise<Player[]> {
-    return this.playerRepository.find();
+  async getAllAccounts(): Promise<Account[]> {
+    return this.accountRepository.find();
   }
 }
