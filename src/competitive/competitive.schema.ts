@@ -40,7 +40,7 @@ export const CompetitiveSchema = z.object({
       competitiveTier: z.int(),
       playerCard: z.guid(),
       playerTitle: z.guid(),
-      preferredLevelBorder: z.guid().or(z.undefined()),
+      preferredLevelBorder: z.guid().or(z.undefined()).or(z.null()),
       accountLevel: z.int(),
       premierPrestige: z
         .object({
@@ -82,7 +82,6 @@ export const CompetitiveSchema = z.object({
         'CeremonyAce',
       ]),
       winningTeam: z.string(),
-      winningTeamRole: z.enum(['Attacker', 'Defender']),
       plantRoundTime: z.int(),
       plantPlayerLocations: z
         .array(
@@ -100,7 +99,7 @@ export const CompetitiveSchema = z.object({
         x: z.int(),
         y: z.int(),
       }),
-      plantSite: z.enum(['A', 'B', 'C', '']),
+      plantSite: z.enum(['A', 'B', 'C', '']).or(z.null()),
       defuseRoundTime: z.int(),
       defusePlayerLocations: z
         .array(
@@ -177,30 +176,14 @@ export const CompetitiveSchema = z.object({
           score: z.int(),
           economy: z.object({
             loadoutValue: z.int(),
-            weapon: z.guid().or(z.literal('')),
-            armor: z.guid().or(z.literal('')),
+            weapon: z.guid().or(z.literal('')).or(z.null()),
+            armor: z.guid().or(z.literal('')).or(z.null()),
             remaining: z.int(),
             spent: z.int(),
           }),
         }),
       ),
       roundResultCode: z.enum(['Elimination', 'Defuse', 'Detonate', '']),
-      playerEconomies: z.array(
-        z.object({
-          subject: z.guid(),
-          loadoutValue: z.int(),
-          weapon: z.guid().or(z.literal('')),
-          armor: z.guid().or(z.literal('')),
-          remaining: z.int(),
-          spent: z.int(),
-        }),
-      ),
-      playerScores: z.array(
-        z.object({
-          subject: z.guid(),
-          score: z.int(),
-        }),
-      ),
     }),
   ),
 });

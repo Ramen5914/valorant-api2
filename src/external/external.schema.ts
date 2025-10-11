@@ -2,12 +2,21 @@ import { z } from 'zod';
 
 export const MapsResponse = z.array(
   z.object({
-    uuid: z.string(),
+    uuid: z.guid(),
     mapUrl: z.string(),
   }),
 );
 
 export type MapsResponse = z.infer<typeof MapsResponse>;
+
+export const CeremoniesResponse = z.array(
+  z.object({
+    uuid: z.guid(),
+    displayName: z.string(),
+  }),
+);
+
+export type CeremoniesResponse = z.infer<typeof CeremoniesResponse>;
 
 export const MatchlistV4 = z.array(
   z.object({
