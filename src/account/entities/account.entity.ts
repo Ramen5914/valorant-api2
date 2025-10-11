@@ -1,4 +1,4 @@
-import { CompetitivePlayer } from 'src/competitive/entities/playerStat.entity';
+import { Player } from 'src/competitive/entities/player.entity';
 import {
   Column,
   CreateDateColumn,
@@ -9,13 +9,12 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class Player {
+export class Account {
   @PrimaryColumn('uuid')
   id: string;
 
   @CreateDateColumn()
   createAt: Date;
-
   @UpdateDateColumn()
   updateAt: Date;
 
@@ -46,6 +45,6 @@ export class Player {
   @Column({ length: 8 })
   region: string;
 
-  @OneToMany(() => CompetitivePlayer, (playerStat) => playerStat.player)
-  matchStats: CompetitivePlayer[];
+  @OneToMany(() => Player, (player) => player.account)
+  matchStats: Player[];
 }

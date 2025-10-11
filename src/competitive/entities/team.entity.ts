@@ -1,19 +1,12 @@
-import {
-  Column,
-  Entity,
-  Index,
-  JoinColumn,
-  ManyToOne,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
-import { CompetitiveMatch } from './competitive.entity';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Match } from './match.entity';
 
 @Entity()
 export class Team {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ length: 10 })
   teamId: string;
 
   @Column('boolean')
@@ -28,14 +21,6 @@ export class Team {
   @Column('int')
   points: number;
 
-  @ManyToOne(
-    () => CompetitiveMatch,
-    (competitiveMatch) => competitiveMatch.teams,
-  )
-  @JoinColumn({ name: 'matchId' })
-  match: CompetitiveMatch;
-
-  @Index()
-  @Column('uuid')
-  matchId: string;
+  @ManyToOne(() => Match, (match) => match.teams)
+  match: Match;
 }
