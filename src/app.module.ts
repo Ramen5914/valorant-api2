@@ -1,14 +1,14 @@
-import { Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
 import { BullModule } from '@nestjs/bull';
+import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { ExternalModule } from './external/external.module';
-import { CompetitiveController } from './competitive/competitive.controller';
 import { CompetitiveModule } from './competitive/competitive.module';
 import { AccountModule } from './account/account.module';
 import { QueueModule } from './queue/queue.module';
+import { AppController } from './app.controller';
+import { CompetitiveController } from './competitive/competitive.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -30,7 +30,6 @@ import { QueueModule } from './queue/queue.module';
       database: process.env.DB_NAME || 'valorant_api',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: process.env.NODE_ENV !== 'production',
-      logging: process.env.NODE_ENV === 'development',
     }),
     ExternalModule,
     CompetitiveModule,
