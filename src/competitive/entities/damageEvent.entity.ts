@@ -7,10 +7,14 @@ export class DamageEvent {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Player)
+  @ManyToOne(() => Player, {
+    orphanedRowAction: 'delete',
+  })
   actor: Player;
 
-  @ManyToOne(() => Player)
+  @ManyToOne(() => Player, {
+    orphanedRowAction: 'delete',
+  })
   target: Player;
 
   @Column('int')
@@ -23,6 +27,8 @@ export class DamageEvent {
   @Column('int')
   headshots: number;
 
-  @ManyToOne(() => Round, (round) => round.damageEvents)
+  @ManyToOne(() => Round, (round) => round.damageEvents, {
+    orphanedRowAction: 'delete',
+  })
   round: Round;
 }

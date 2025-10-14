@@ -1,5 +1,12 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  Entity,
+  ManyToOne,
+  OneToMany,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import { Match } from './match.entity';
+import { Player } from './player.entity';
 
 @Entity()
 export class Team {
@@ -21,6 +28,14 @@ export class Team {
   @Column('int')
   points: number;
 
-  @ManyToOne(() => Match, (match) => match.teams)
+  @Column('int')
+  averageRank: number;
+
+  @OneToMany(() => Player, (player) => player.team, { cascade: true })
+  players: Player[];
+
+  @ManyToOne(() => Match, (match) => match.teams, {
+    orphanedRowAction: 'delete',
+  })
   match: Match;
 }

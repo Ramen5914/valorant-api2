@@ -7,7 +7,9 @@ export class BombPlayerLocation {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Player, (player) => player.id)
+  @ManyToOne(() => Player, (player) => player.id, {
+    orphanedRowAction: 'delete',
+  })
   player: Player;
 
   @Column('float')
@@ -15,6 +17,8 @@ export class BombPlayerLocation {
   @Column('simple-array')
   location: number[];
 
-  @ManyToOne(() => BombEvent, (bombEvent) => bombEvent.playerLocations)
+  @ManyToOne(() => BombEvent, (bombEvent) => bombEvent.playerLocations, {
+    orphanedRowAction: 'delete',
+  })
   bombEvent: BombEvent;
 }

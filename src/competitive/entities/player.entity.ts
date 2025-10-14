@@ -8,10 +8,14 @@ export class Player {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @ManyToOne(() => Account, (account) => account.id)
+  @ManyToOne(() => Account, (account) => account.id, {
+    orphanedRowAction: 'delete',
+  })
   account: Account;
 
-  @ManyToOne(() => Team, (team) => team.id)
+  @ManyToOne(() => Team, (team) => team.id, {
+    orphanedRowAction: 'delete',
+  })
   team: Team;
 
   @Column('uuid')
@@ -20,34 +24,34 @@ export class Player {
   @Column('uuid')
   characterId: string;
 
-  @Column('int')
+  @Column('int', { nullable: true })
   customScore: number;
 
-  @Column('int')
+  @Column('int', { nullable: true })
   damageDelta: number;
-  @Column('int')
+  @Column('int', { nullable: true })
   kast: number;
   @Column({ type: 'numeric', precision: 7, scale: 3 })
   adr: number;
   @Column({ type: 'numeric', precision: 5, scale: 3 })
   kdRatio: number;
-  @Column({ type: 'numeric', precision: 6, scale: 3 })
+  @Column({ type: 'numeric', precision: 6, scale: 3, nullable: true })
   headshotPercentage: number;
-  @Column({ type: 'numeric', precision: 7, scale: 3 })
+  @Column({ type: 'numeric', precision: 7, scale: 3, nullable: true })
   economyRating: number;
 
-  @Column('int')
+  @Column('int', { nullable: true })
   firstBloods: number;
-  @Column('int')
+  @Column('int', { nullable: true })
   firstDeaths: number;
 
   // [3k, 4k, 5k, ..., nk] Current max is 7k, but no hard limit in code
-  @Column('simple-array')
+  @Column('simple-array', { nullable: true })
   multiKills: number[];
 
-  @Column('int')
+  @Column('int', { nullable: true })
   plants: number;
-  @Column('int')
+  @Column('int', { nullable: true })
   defuses: number;
 
   @Column('int')
@@ -72,6 +76,8 @@ export class Player {
   @Column('int')
   rank: number;
 
-  @ManyToOne(() => Match, (match) => match.players)
+  @ManyToOne(() => Match, (match) => match.players, {
+    orphanedRowAction: 'delete',
+  })
   match: Match;
 }

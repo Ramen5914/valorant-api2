@@ -29,7 +29,9 @@ export class BombEvent {
   @Column('interval')
   roundTime: string;
 
-  @ManyToOne(() => Player)
+  @ManyToOne(() => Player, {
+    orphanedRowAction: 'delete',
+  })
   actor: Player;
 
   @Column('simple-array')
@@ -38,6 +40,8 @@ export class BombEvent {
   @OneToMany(() => BombPlayerLocation, (location) => location.bombEvent)
   playerLocations: BombPlayerLocation[];
 
-  @ManyToOne(() => Round, (round) => round.bombEvents)
+  @ManyToOne(() => Round, (round) => round.bombEvents, {
+    orphanedRowAction: 'delete',
+  })
   round: Round;
 }

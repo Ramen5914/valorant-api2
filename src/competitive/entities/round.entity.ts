@@ -48,6 +48,8 @@ export class Round {
   })
   damageEvents: DamageEvent[];
 
-  @ManyToOne(() => Match, (match) => match.rounds)
+  @ManyToOne(() => Match, (match) => match.rounds, {
+    orphanedRowAction: 'delete',
+  })
   match: Match;
 }

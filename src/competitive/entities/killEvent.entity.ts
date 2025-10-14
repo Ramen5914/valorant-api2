@@ -23,13 +23,15 @@ export class KillEvent {
   @Column('interval')
   roundTime: string;
 
-  @ManyToOne(() => Player)
+  @ManyToOne(() => Player, {
+    orphanedRowAction: 'delete',
+  })
   actor: Player;
 
   @Column('simple-array')
   actorLocation: number[];
 
-  @ManyToOne(() => Player, { nullable: true })
+  @ManyToOne(() => Player, { nullable: true, orphanedRowAction: 'delete' })
   target: Player;
 
   @Column('simple-array', { nullable: true })
@@ -49,6 +51,8 @@ export class KillEvent {
   @Column('boolean')
   isSecondaryFireMode: boolean;
 
-  @ManyToOne(() => Round, (round) => round.killEvents)
+  @ManyToOne(() => Round, (round) => round.killEvents, {
+    orphanedRowAction: 'delete',
+  })
   round: Round;
 }

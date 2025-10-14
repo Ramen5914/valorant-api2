@@ -5,7 +5,7 @@ import { Round } from './round.entity';
 
 @Entity()
 export class Match {
-  @PrimaryColumn('uuid')
+  @PrimaryColumn('uuid', { nullable: false })
   id: string;
 
   @Column('uuid')
@@ -26,19 +26,12 @@ export class Match {
   @Column('uuid')
   season: string;
 
-  @Column('int')
-  averageRank: number;
-
-  @OneToMany(() => Player, (player) => player.match, {
-    cascade: true,
-  })
+  @OneToMany(() => Player, (player) => player.match, { cascade: true })
   players: Player[];
 
   @OneToMany(() => Team, (team) => team.match, { cascade: true })
   teams: Team[];
 
-  @OneToMany(() => Round, (round) => round.match, {
-    cascade: true,
-  })
+  @OneToMany(() => Round, (round) => round.match, { cascade: true })
   rounds: Round[];
 }
