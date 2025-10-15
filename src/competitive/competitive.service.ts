@@ -30,66 +30,70 @@ export class CompetitiveService {
       duration: millisToDuration(match.matchInfo.gameLengthMillis),
       completedEarly: match.matchInfo.isEarlyCompletion,
       season: match.matchInfo.seasonId,
-      teams: match.teams.map((team) => {
-        const tPlayers = match.players.filter(
-          (player) => player.teamId == team.teamId,
-        );
-
-        return this.teamRepository.create({
-          teamId: team.teamId,
-          points: team.numPoints,
-          roundsPlayed: team.roundsPlayed,
-          roundsWon: team.roundsWon,
-          won: team.won,
-          averageRank: Math.round(
-            tPlayers.reduce((sum, player) => sum + player.competitiveTier, 0) /
-              tPlayers.length,
-          ),
-          players: tPlayers.map((player) => {
-            return this.playerReposity.create({
-              ability1Casts: player.stats.abilityCasts.ability1Casts,
-              ability2Casts: player.stats.abilityCasts.ability2Casts,
-              account: undefined, // TODO figure out how to link account to player (and update account when necessary)
-              adr:
-                (match.roundResults ?? []).reduce((sum, round) => {
-                  const stats = round.playerStats.find(
-                    (stat) => stat.subject === player.subject,
-                  );
-                  if (!stats) return sum;
-                  const damageSum = stats.damage.reduce(
-                    (acc, d) => acc + d.damage,
-                    0,
-                  );
-                  return sum + damageSum;
-                }, 0) / Math.max(1, team.roundsPlayed),
-              assists: player.stats.assists,
-              characterId: player.characterId,
-              customScore: undefined, // TODO create a custom scoring metric similar to Tracker Score for tracker network
-              damageDelta: undefined, // TODO calculate all damage stats for all players in one for loop
-              deaths: player.stats.deaths,
-              defuses: undefined, // TODO calculate times a player defused
-              economyRating: undefined, // TODO calculate economy rating
-              firstBloods: undefined, // TODO calculate first bloods
-              firstDeaths: undefined, // TODO calculate first deaths
-              grenadeCasts: player.stats.abilityCasts.grenadeCasts,
-              headshotPercentage: undefined, // TODO calculate headshot percentage
-              kast: undefined, // TODO calculate KAST
-              kdRatio:
-                player.stats.kills /
-                (player.stats.deaths === 0 ? 1 : player.stats.deaths),
-              kills: player.stats.kills,
-              multiKills: undefined, // TODO calculate multi kills
-              partyId: player.partyId,
-              plants: undefined, // TODO calculate times a player planted
-              rank: player.competitiveTier,
-              roundsPlayed: player.stats.roundsPlayed,
-              score: player.stats.score,
-              ultimateCasts: player.stats.abilityCasts.ultimateCasts,
-            });
-          }),
-        });
-      }),
     });
+
+    const teams = match.teams.map((team) => {
+      const tPlayers = match.players.filter(
+        (player) => player.teamId == team.teamId,
+      );
+
+      return this.teamRepository.create({
+        teamId: team.teamId,
+        points: team.numPoints,
+        roundsPlayed: team.roundsPlayed,
+        roundsWon: team.roundsWon,
+        won: team.won,
+        averageRank: Math.round(
+          tPlayers.reduce((sum, player) => sum + player.competitiveTier, 0) /
+            tPlayers.length,
+        ),
+        players: tPlayers.map((player) => {
+          return this.playerReposity.create({
+            ability1Casts: player.stats.abilityCasts.ability1Casts,
+            ability2Casts: player.stats.abilityCasts.ability2Casts,
+            account: undefined, // TODO figure out how to link account to player (and update account when necessary)
+            adr:
+              (match.roundResults ?? []).reduce((sum, round) => {
+                const stats = round.playerStats.find(
+                  (stat) => stat.subject === player.subject,
+                );
+                if (!stats) return sum;
+                const damageSum = stats.damage.reduce(
+                  (acc, d) => acc + d.damage,
+                  0,
+                );
+                return sum + damageSum;
+              }, 0) / Math.max(1, team.roundsPlayed),
+            assists: player.stats.assists,
+            characterId: player.characterId,
+            customScore: undefined, // TODO create a custom scoring metric similar to Tracker Score for tracker network
+            damageDelta: undefined, // TODO calculate all damage stats for all players in one for loop
+            deaths: player.stats.deaths,
+            defuses: undefined, // TODO calculate times a player defused
+            economyRating: undefined, // TODO calculate economy rating
+            firstBloods: undefined, // TODO calculate first bloods
+            firstDeaths: undefined, // TODO calculate first deaths
+            grenadeCasts: player.stats.abilityCasts.grenadeCasts,
+            headshotPercentage: undefined, // TODO calculate headshot percentage
+            kast: undefined, // TODO calculate KAST
+            kdRatio:
+              player.stats.kills /
+              (player.stats.deaths === 0 ? 1 : player.stats.deaths),
+            kills: player.stats.kills,
+            match: compMatch,
+            multiKills: undefined, // TODO calculate multi kills
+            partyId: player.partyId,
+            plants: undefined, // TODO calculate times a player planted
+            rank: player.competitiveTier,
+            roundsPlayed: player.stats.roundsPlayed,
+            score: player.stats.score,
+            ultimateCasts: player.stats.abilityCasts.ultimateCasts,
+          });
+        }),
+      });
+    });
+
+    compMatch.teams = teams;
 
     return await this.competitiveRepository.save(compMatch);
   }
@@ -97,7 +101,7 @@ export class CompetitiveService {
   async getMatchById(id: string): Promise<Match | null> {
     return this.competitiveRepository.findOne({
       where: { id },
-      relations: ['teams', 'teams.players'],
+      relations: ['teams', 'players'],
     });
   }
 }
