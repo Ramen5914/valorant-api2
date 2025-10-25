@@ -37,7 +37,7 @@ export class PlayerMatchQueueService {
   }
 
   async addAllPlayersToQueue(): Promise<void> {
-    const players = await this.playerService.getAllAccounts();
+    const players = [];
 
     console.log(`Adding ${players.length} players to the queue`);
 
