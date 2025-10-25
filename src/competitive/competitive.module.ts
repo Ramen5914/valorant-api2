@@ -12,6 +12,7 @@ import { ExternalModule } from 'src/external/external.module';
 import { CompetitiveController } from './competitive.controller';
 import { CompetitiveService } from './competitive.service';
 import { BombPlayerLocation } from './entities/bombPlayerLocation.entity';
+import { AccountModule } from 'src/account/account.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { BombPlayerLocation } from './entities/bombPlayerLocation.entity';
       Team,
     ]),
     ExternalModule,
+    AccountModule,
   ],
   controllers: [CompetitiveController],
   providers: [CompetitiveService],

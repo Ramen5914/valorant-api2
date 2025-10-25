@@ -4,6 +4,8 @@ export const CompetitiveSchema = z.object({
   matchInfo: z.object({
     matchId: z.guid(),
     mapId: z.string(),
+    gamePodId: z.string(),
+    gameLoopZone: z.string(),
     gameVersion: z.string(),
     gameLengthMillis: z.int(),
     gameStartMillis: z.int(),
