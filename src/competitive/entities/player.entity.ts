@@ -2,6 +2,7 @@ import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { Account } from 'src/account/entities/account.entity';
 import { Team } from './team.entity';
 import { Match } from './match.entity';
+import { NumericTransformer } from 'src/transformers/numeric';
 
 @Entity()
 export class Player {
@@ -9,12 +10,12 @@ export class Player {
   id: number;
 
   @ManyToOne(() => Account, (account) => account.id, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   account: Account;
 
   @ManyToOne(() => Team, (team) => team.id, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   team: Team;
 
@@ -31,13 +32,35 @@ export class Player {
   damageDelta: number;
   @Column('int', { nullable: true })
   kast: number;
-  @Column({ type: 'numeric', precision: 7, scale: 3 })
+  @Column({
+    type: 'numeric',
+    precision: 7,
+    scale: 3,
+    transformer: new NumericTransformer(),
+  })
   adr: number;
-  @Column({ type: 'numeric', precision: 5, scale: 3 })
+  @Column({
+    type: 'numeric',
+    precision: 5,
+    scale: 3,
+    transformer: new NumericTransformer(),
+  })
   kdRatio: number;
-  @Column({ type: 'numeric', precision: 6, scale: 3, nullable: true })
+  @Column({
+    type: 'numeric',
+    precision: 6,
+    scale: 3,
+    nullable: true,
+    transformer: new NumericTransformer(),
+  })
   headshotPercentage: number;
-  @Column({ type: 'numeric', precision: 7, scale: 3, nullable: true })
+  @Column({
+    type: 'numeric',
+    precision: 7,
+    scale: 3,
+    nullable: true,
+    transformer: new NumericTransformer(),
+  })
   economyRating: number;
 
   @Column('int', { nullable: true })
@@ -56,6 +79,13 @@ export class Player {
 
   @Column('int')
   score: number;
+  @Column({
+    type: 'numeric',
+    precision: 7,
+    scale: 3,
+    transformer: new NumericTransformer(),
+  })
+  averageCombatScore: number;
   @Column('int')
   roundsPlayed: number;
   @Column('int')
@@ -77,7 +107,7 @@ export class Player {
   rank: number;
 
   @ManyToOne(() => Match, (match) => match.players, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   match: Match;
 }
