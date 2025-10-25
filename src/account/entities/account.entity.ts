@@ -14,9 +14,12 @@ export class Account {
   id: string;
 
   @CreateDateColumn()
-  createAt: Date;
+  createdAt: Date;
   @UpdateDateColumn()
-  updateAt: Date;
+  updatedAt: Date;
+
+  @Column('timestamptz')
+  lastMatch: Date;
 
   @Column()
   name: string;
