@@ -31,7 +31,11 @@ export class Team {
   @Column('int')
   averageRank: number;
 
-  @OneToMany(() => Player, (player) => player.team, { cascade: true })
+  @OneToMany(() => Player, (player) => player.team, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   players: Player[];
 
   @ManyToOne(() => Match, (match) => match.teams, {
