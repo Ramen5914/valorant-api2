@@ -1,4 +1,11 @@
-import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  OneToMany,
+  PrimaryColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 import { Team } from './team.entity';
 import { Player } from './player.entity';
 import { Round } from './round.entity';
@@ -8,8 +15,19 @@ export class Match {
   @PrimaryColumn('uuid', { nullable: false })
   id: string;
 
+  @CreateDateColumn()
+  createdAt: Date;
+  @UpdateDateColumn()
+  updatedAt: Date;
+
   @Column('uuid')
   map: string;
+
+  @Column()
+  gamePodId: string;
+
+  @Column()
+  gameLoopZone: string;
 
   @Column({ length: 64 })
   gameVersion: string;
