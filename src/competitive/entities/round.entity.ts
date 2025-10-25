@@ -30,7 +30,7 @@ export class Round {
   @Column()
   roundResultCode: string;
 
-  @Column({ length: 10 })
+  @Column({ length: 4 })
   winningTeamId: string;
 
   @OneToMany(() => BombEvent, (event) => event.round, {
