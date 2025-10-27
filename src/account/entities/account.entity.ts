@@ -48,6 +48,10 @@ export class Account {
   @Column({ length: 8 })
   region: string;
 
-  @OneToMany(() => Player, (player) => player.account)
+  @OneToMany(() => Player, (player) => player.account, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   matchStats: Player[];
 }

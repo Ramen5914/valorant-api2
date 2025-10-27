@@ -7,7 +7,10 @@ export class NumericTransformer implements ValueTransformer {
 
   from(value: string | null | undefined): number | null {
     if (value === null || value === undefined) return null;
-    const n = parseFloat(value);
-    return Number.isNaN(n) ? null : n;
+    if (!/^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/.test(value.trim())) {
+      return null;
+    }
+
+    return parseFloat(value);
   }
 }

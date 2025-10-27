@@ -24,14 +24,17 @@ export class KillEvent {
   roundTime: string;
 
   @ManyToOne(() => Player, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   actor: Player;
 
   @Column('simple-array')
   actorLocation: number[];
 
-  @ManyToOne(() => Player, { nullable: true, orphanedRowAction: 'delete' })
+  @ManyToOne(() => Player, {
+    nullable: true,
+    onDelete: 'CASCADE',
+  })
   target: Player;
 
   @Column('simple-array', { nullable: true })
@@ -41,7 +44,11 @@ export class KillEvent {
   @JoinTable()
   assistants: Player[];
 
-  @OneToMany(() => KillPlayerLocation, (location) => location.killEvent)
+  @OneToMany(() => KillPlayerLocation, (location) => location.killEvent, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   playerLocations: KillPlayerLocation[];
 
   @Column()
@@ -52,7 +59,7 @@ export class KillEvent {
   isSecondaryFireMode: boolean;
 
   @ManyToOne(() => Round, (round) => round.killEvents, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   round: Round;
 }

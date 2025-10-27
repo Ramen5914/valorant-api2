@@ -35,21 +35,27 @@ export class Round {
 
   @OneToMany(() => BombEvent, (event) => event.round, {
     cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
   })
   bombEvents: BombEvent[];
 
   @OneToMany(() => KillEvent, (event) => event.round, {
     cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
   })
   killEvents: KillEvent[];
 
   @OneToMany(() => DamageEvent, (event) => event.round, {
     cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
   })
   damageEvents: DamageEvent[];
 
   @ManyToOne(() => Match, (match) => match.rounds, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   match: Match;
 }

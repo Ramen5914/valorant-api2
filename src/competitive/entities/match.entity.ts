@@ -44,12 +44,24 @@ export class Match {
   @Column('uuid')
   season: string;
 
-  @OneToMany(() => Player, (player) => player.match, { cascade: true })
+  @OneToMany(() => Player, (player) => player.match, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   players: Player[];
 
-  @OneToMany(() => Team, (team) => team.match, { cascade: true })
+  @OneToMany(() => Team, (team) => team.match, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   teams: Team[];
 
-  @OneToMany(() => Round, (round) => round.match, { cascade: true })
+  @OneToMany(() => Round, (round) => round.match, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   rounds: Round[];
 }

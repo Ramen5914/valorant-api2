@@ -30,18 +30,23 @@ export class BombEvent {
   roundTime: string;
 
   @ManyToOne(() => Player, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
+    nullable: false,
   })
   actor: Player;
 
   @Column('simple-array')
   actorLocation: number[];
 
-  @OneToMany(() => BombPlayerLocation, (location) => location.bombEvent)
+  @OneToMany(() => BombPlayerLocation, (location) => location.bombEvent, {
+    cascade: true,
+    onDelete: 'CASCADE',
+    orphanedRowAction: 'delete',
+  })
   playerLocations: BombPlayerLocation[];
 
   @ManyToOne(() => Round, (round) => round.bombEvents, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   round: Round;
 }

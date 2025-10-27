@@ -8,7 +8,7 @@ export class BombPlayerLocation {
   id: number;
 
   @ManyToOne(() => Player, (player) => player.id, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   player: Player;
 
@@ -18,7 +18,7 @@ export class BombPlayerLocation {
   location: number[];
 
   @ManyToOne(() => BombEvent, (bombEvent) => bombEvent.playerLocations, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   bombEvent: BombEvent;
 }

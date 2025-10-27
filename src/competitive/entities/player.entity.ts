@@ -8,13 +8,12 @@ import { NumericTransformer } from 'src/transformers/numeric';
 export class Player {
   @PrimaryGeneratedColumn()
   id: number;
-
-  @ManyToOne(() => Account, (account) => account.id, {
+  @ManyToOne(() => Account, (account) => account.matchStats, {
     onDelete: 'CASCADE',
   })
   account: Account;
 
-  @ManyToOne(() => Team, (team) => team.id, {
+  @ManyToOne(() => Team, (team) => team.players, {
     onDelete: 'CASCADE',
   })
   team: Team;
@@ -26,7 +25,7 @@ export class Player {
   characterId: string;
 
   @Column('int', { nullable: true })
-  customScore: number;
+  customScore: number | null;
 
   @Column('int', { nullable: true })
   damageDelta: number;

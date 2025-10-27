@@ -39,7 +39,7 @@ export class Team {
   players: Player[];
 
   @ManyToOne(() => Match, (match) => match.teams, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   match: Match;
 }

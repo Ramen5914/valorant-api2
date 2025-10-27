@@ -8,12 +8,12 @@ export class DamageEvent {
   id: number;
 
   @ManyToOne(() => Player, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   actor: Player;
 
   @ManyToOne(() => Player, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   target: Player;
 
@@ -28,7 +28,7 @@ export class DamageEvent {
   headshots: number;
 
   @ManyToOne(() => Round, (round) => round.damageEvents, {
-    orphanedRowAction: 'delete',
+    onDelete: 'CASCADE',
   })
   round: Round;
 }
